@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - ⌫
+  - '['
   - Shift
   - A
   - S
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - Ctrl
+  - LEFT CONTROL
   - Z
   - X
   - C
@@ -36,327 +36,151 @@ layers:
   - ','
   - .
   - /
-  - {t: Esc, h: Shift}
-  - '['
-  - Firmware
-  - numbers_and_nav
+  - \
+  - '`'
+  - Alt
+  - {t: DELETE, h: lower}
   - ␣
   - ⏎
-  - '&td_dev_mouse'
-  - '&td_cmd_numnav'
-  - Firmware
-  dev:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - '`'
-  - '{'
-  - '}'
-  - '~'
-  - '|'
-  - ⌦
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&'
-  - {t: ▽, type: trans}
-  - '-'
-  - (
-  - )
-  - '='
-  - +
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
-  - '['
+  - {t: ⌫, h: raise}
+  - {t: ⌦, h: RIGHT GUI}
   - ']'
-  - KP MULTIPLY
-  - \
+  lower:
   - Esc
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - function_bt
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  numbers_and_nav:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - Vol Up
-  - Print Scrn
-  - Home
-  - ↑
-  - End
-  - Page ↑
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - Vol Down
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - →
-  - Page ↓
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '&'
   - '7'
   - '8'
   - '9'
-  - MUTE
+  - _
+  - (
+  - )
+  - Shift
+  - ''
+  - ''
+  - ''
+  - +
+  - PAGE UP
+  - '4'
+  - '5'
+  - '6'
+  - ''
+  - UP ARROW
+  - ''
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '='
+  - Page ↓
+  - '1'
+  - '2'
+  - '3'
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Caps Lock
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - function_bt
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  function_bt:
+  - '0'
+  - ⌫
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F10
+  raise:
+  - Esc
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
-  - F11
-  - {t: ▽, type: trans}
-  - '&m_bt_to_layer 0 0'
-  - '&m_bt_to_layer 1 0'
-  - '&m_bt_to_layer 2 4'
-  - '&m_bt_to_layer 3 0'
-  - '&m_bt_to_layer 4 0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F7
   - F8
   - F9
+  - F10
+  - F11
   - F12
-  - OUT TOG
+  - Shift
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - VOLUME UP
+  - F4
+  - F5
+  - F6
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOLUME DOWN
+  - F1
+  - F2
+  - F3
+  - ''
+  - ''
+  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - adjust
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  osx:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Win
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&td_dev_mouse_osx'
-  - '&td_ctrl_numnav'
-  - {t: ▽, type: trans}
-  mouse:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Scroll ←
-  - Mouse ↑
-  - Scroll →
-  - Scroll ↑
-  - ⌦
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - Scroll ↓
-  - ⌫
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Left Click
-  - Middle Click
-  - Right Click
-  - ''
-  - {t: default, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Left Click
-  - {t: ▽, type: trans}
-  - Right Click
-  - {t: ▽, type: trans}
-  mouse_osx:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Scroll ←
-  - Mouse ↑
-  - Scroll →
-  - Scroll ↓
-  - ⌦
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - Scroll ↑
-  - ⌫
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - Left Click
-  - Middle Click
-  - Right Click
-  - ''
-  - {t: osx, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Left Click
-  - {t: ▽, type: trans}
-  - Right Click
-  - {t: ▽, type: trans}
-  Firmware:
-  - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - INSERT
+  adjust:
   - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 0
+  - BT 1
+  - ''
+  - ''
+  - ''
+  - ''
   - Reset
-  - {t: ▽, type: trans}
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 3
+  - BT 2
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+combos:
+- p: [39, 40]
+  k: BT CLR
+  l: [adjust]
