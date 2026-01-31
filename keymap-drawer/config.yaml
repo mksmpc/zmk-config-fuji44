@@ -15,11 +15,11 @@ parse_config:
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
 
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
+    '&bt BT_SEL 0': BT 0
+    '&bt BT_SEL 1': BT 1
+    '&bt BT_SEL 2': BT 2
+    '&bt BT_SEL 3': BT 3
+    '&bt BT_SEL 4': BT 4
 
     '&mmv MOVE_UP': Mouse ↑
     '&mmv MOVE_DOWN': Mouse ↓
@@ -64,13 +64,15 @@ parse_config:
     RCTRL: Ctrl
     LALT: Alt
     RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
+    LGUI: Win
+    RGUI: Win
     LSHFT: Shift
     RSHFT: Shift
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
+    BACKSPACE: ⌫
+    ENTER: ⏎
     RET: ⏎
     TAB: ↹
     DEL: ⌦
