@@ -1,330 +1,188 @@
 layout: {zmk_keyboard: fuji44}
 layers:
-  def:
-  - {t: '`', h: ESCAPE}
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - {t: nav, h: toggle}
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - {t: Ctl+Shift, h: Ctrl}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - {t: ']', h: Ctrl}
-  - '&key_repeat'
-  - {t: ⏎, h: F15_media_numpad}
-  - {t: ⌫, h: symb}
-  - {t: ␣, h: Shift}
-  - {t: ␣, h: nav}
-  - {t: ⌫, h: num}
-  - {t: ⏎, h: Func}
-  - '&key_repeat'
-  num:
-  - ESCAPE
-  - KP MULTIPLY
-  - '6'
-  - '5'
-  - '4'
-  - KP SLASH
-  - ''
-  - Insert
-  - DELETE
-  - Ctl+Pause Break
-  - ''
-  - {t: def, h: toggle}
-  - KP PLUS
-  - '3'
-  - '2'
-  - '1'
-  - '0'
-  - KP SUBTRACT
-  - _
-  - Shift
-  - LEFT CONTROL
-  - Alt
-  - Win
-  - ⏎
-  - '='
-  - '&mCOMMA'
-  - '9'
-  - '8'
-  - '7'
-  - '&mDOT'
-  - {t: F15_media_numpad, h: toggle}
-  - '='
-  - <
-  - '>'
-  - /
-  - Ctrl
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ⌫, type: held}
-  - {t: sys, h: sticky}
-  - ''
-  F15_media_numpad:
-  - MUTE
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - KP DIVIDE
-  - KP 7
-  - KP 8
-  - KP 9
-  - KP MULTIPLY
-  - ESCAPE
-  - Vol Up
-  - {t: LEFT GUI, h: sticky}
-  - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: Shift, h: sticky}
-  - '&mPlayStop'
-  - KP MINUS
-  - KP 4
-  - KP 5
-  - KP 6
-  - KP PLUS
-  - '='
-  - VOLUME DOWN
-  - Gui+Sft+T
-  - Gui+KP MINUS
-  - ''
-  - Gui+KP PLUS
-  - Ctl+Sft+T
-  - KP NUMLOCK
-  - KP 1
-  - KP 2
-  - KP 3
-  - KP DOT
-  - E
-  - ''
-  - {t: ⏎, type: held}
-  - {t: ▽, type: trans}
-  - ␣
-  - {t: KP 0, h: nav}
-  - ⌫
-  - {t: KP ENTER, h: sys}
-  - ''
+  def: [Alt, Q, W, E, R, T, Y, U, I, O, P, ']', Ctrl, A, S, D, F, G, H, J, K, L, ;, '''', Shift, Z, X, C, V, B, N, M, ',', ., /, Shift, Page ↓, num, ␣, nav, ⌫, sys,
+    ⏎, PAGE UP]
   nav:
-  - ESCAPE
-  - ''
-  - ''
-  - Alt+←
-  - Alt+→
-  - Ctl+Y
-  - PAGE UP
-  - Home
-  - UP ARROW
-  - End
-  - Scroll ↑
-  - {t: def, h: toggle}
-  - {t: def, h: toggle}
-  - Win
-  - Alt
-  - Ctrl
-  - Shift
-  - ↹
-  - Page ↓
-  - LEFT ARROW
-  - DOWN ARROW
-  - →
-  - Scroll ↓
+  - Esc
+  - Ctl+Page ↓
+  - Ctl+[
   - ⏎
-  - Select All
-  - ''
+  - Ctl+]
+  - ⌫
+  - Scroll ↑
+  - Left Click
+  - Mouse ↑
+  - Right Click
+  - {t: ▽, type: trans}
+  - Page ↑
+  - '&m14'
+  - Gui+M
+  - '&m9'
+  - Alt
+  - ↹
+  - ⌦
+  - Scroll ↓
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - {t: ▽, type: trans}
+  - Page ↓
+  - Caps Lock
+  - Undo
   - Cut
   - Copy
   - Ctl+V
-  - Undo
-  - ''
-  - Scroll ←
-  - Sft+F10
-  - Scroll →
-  - Ctl+KP PLUS
-  - Ctl+KP MINUS
-  - ''
-  - ⏎
+  - Ctl+B
+  - Sft+Ctl+6
+  - Sft+Ctl+4
+  - '&m8'
+  - '&m10'
+  - '&m15'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ␣, type: held}
-  - ⌫
   - {t: ▽, type: trans}
-  - ''
-  symb:
-  - {t: def, h: toggle}
-  - ''
-  - F2
-  - DELETE
-  - INSERT
-  - Ctl+Y
-  - '&'
-  - ^
-  - '!'
-  - '@'
-  - $
-  - '#'
-  - {t: num, h: toggle}
-  - LEFT GUI
-  - Alt
-  - Ctrl
-  - Shift
-  - ↹
-  - _
-  - (
-  - )
-  - '%'
-  - ':'
-  - '"'
-  - Select All
-  - Gui+Sft+S
-  - Cut
-  - Ctl+Insert
-  - Paste
-  - Undo
-  - \
-  - '='
-  - <
-  - '>'
-  - '?'
-  - '|'
-  - ''
-  - {t: sys, h: sticky}
+  - PRINTSCREEN
   - {type: held}
   - {t: ▽, type: trans}
-  - ␣
-  - Ctl+⌫
-  - Ctl+⌦
-  - _
-  Func:
-  - ESCAPE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  sys:
+  - '`'
+  - Sft+Ctl+↑
+  - Home
+  - ↑
+  - End
+  - {t: ▽, type: trans}
+  - '='
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '&m7'
+  - '&m11'
+  - Sft+Ctl+↓
+  - ←
+  - ↓
+  - →
+  - {t: ▽, type: trans}
+  - +
+  - '4'
+  - '5'
+  - '6'
+  - '['
+  - Alt+G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+Ctl+←
+  - {t: ▽, type: trans}
+  - Sft+Ctl+→
+  - '&m4'
+  - '-'
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - '&m9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F6
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  num:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+P
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Insert
+  - {t: ▽, type: trans}
   - F7
   - F8
   - F9
   - F10
+  - {t: ▽, type: trans}
+  - Ctl+1
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
   - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - SCROLLLOCK
+  - KP NUMLOCK
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: Shift, h: sticky}
-  - {t: Ctrl, h: sticky}
-  - {t: RIGHT ALT, h: sticky}
-  - {t: RIGHT GUI, h: sticky}
+  - F1
+  - F2
+  - F3
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F5
-  - F4
-  - F3
-  - F2
-  - F1
-  - ''
-  - {t: ▽, type: trans}
-  - sys
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  sys:
-  - Boot
-  - ''
-  - ''
-  - BT CLR ALL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '4':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT 0
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - BT CLR
-  - ''
-  - CAPSLOCK
-  - PRINTSCREEN
-  - SCROLLLOCK
-  - Pause Break
-  - ''
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - AL MY COMPUTER
-  - AL CALCULATOR
-  - ''
-  - ''
-  - ''
-  - SLEEP
-  - Reset
-  - BT 3
-  - BT 2
-  - BT 1
-  - BT 0
-  - ''
-  - ''
-  - BT 0
-  - BT 1
-  - BT 2
-  - BT 3
-  - Reset
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
-- p: [18, 19]
-  k: _
-  l: [def]
-- p: [12, 24]
-  k: Ctl+Shift
-  l: [def]
-- p: [16, 17]
-  k: KP MINUS
-  l: [def]
-- p: [16, 17]
-  k: Win Prev
-  l: [nav, symb]
+- p: [0, 1]
+  k: Esc
+  draw_separate: true
