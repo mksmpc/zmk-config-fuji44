@@ -59,10 +59,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT WIN
-  - LEFT ALT
+  - Win
+  - Alt
   - Ctrl
-  - LEFT SHIFT
+  - Shift
   - {t: ▽, type: trans}
   - ←
   - ↓
@@ -77,7 +77,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Home
-  - PAGE DOWN
+  - Page ↓
   - Page ↑
   - End
   - {t: ▽, type: trans}
@@ -155,10 +155,10 @@ layers:
   - '6'
   - '='
   - {t: ▽, type: trans}
-  - RIGHT SHIFT
+  - Shift
   - Ctrl
   - Alt
-  - RIGHT WIN
+  - Win
   - {t: ▽, type: trans}
   - )
   - /
@@ -200,10 +200,10 @@ layers:
   - ^
   - '='
   - {t: ▽, type: trans}
-  - RSHIFT
+  - Shift
   - Ctrl
-  - LEFT ALT
-  - RIGHT WIN
+  - Alt
+  - Win
   - {t: ▽, type: trans}
   - '}'
   - /
