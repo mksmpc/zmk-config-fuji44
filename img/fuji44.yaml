@@ -38,11 +38,11 @@ layers:
   - /
   - \
   - '['
-  - Gui
+  - Win
   - {t: ↹, h: nav}
   - {t: ␣, h: sys}
-  - {t: ENTER, h: num}
-  - {t: BACKSPACE, h: sym}
+  - {t: ⏎, h: num}
+  - {t: ⌫, h: sym}
   - Alt
   - ']'
   nav:
@@ -122,10 +122,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - BT 0
   - BT 1
   - BT 2
   - BT 3
-  - BT 4
   - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
