@@ -2,7 +2,7 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- * Config By Serk70: https://github.com/Serk70/zmk-config-fuji44/blob/main/config/fuji44.keymap
+ * Config By Noidor13: https://github.com/Serk70/zmk-config-fuji44/blob/main/config/fuji44.keymap
  */
 
 #include <behaviors.dtsi>
@@ -14,34 +14,10 @@
     combos {
         compatible = "zmk,combos";
 
-        Underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <18 19>;
-            layers = <0>;
+        combo_esc {
             timeout-ms = <50>;
-        };
-
-        LANG_SWITCH {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <12 24>;
-            timeout-ms = <80>;
-            slow-release;
-            layers = <0>;
-        };
-
-        MINUS_KEY {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        Shift_Tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
-            layers = <3 4>;
-            slow-release;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
         };
     };
 
@@ -73,70 +49,82 @@
             bindings = <&kp>, <&kp>;
         };
 
-        ht_grv_esc: ht_grv_esc {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_GRV_ESC";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <120>;
-            flavor = "tap-preferred";
+        mouse_key_press: mouse_key_press {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE_KEY_PRESS";
+            #binding-cells = <1>;
         };
 
-        ht_tap_prior: ht_tap_prior {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HT_TAP_PRIOR";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            require-prior-idle-ms = <0>;
-            flavor = "tap-preferred";
-            quick-tap-ms = <120>;
+        sensor_rotate: sensor_rotate {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SENSOR_ROTATE";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
         };
     };
 
     macros {
-        mDOT: mDOT {
+        m7: m7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_4 &kp KP_NUMBER_6>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "MDOT";
+            bindings = <&kp LS(LC(UP)) &kp LA(T)>;
+            label = "M7";
         };
 
-        mCOMMA: mCOMMA {
+        m9: m9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_4 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "MCOMMA";
+            bindings = <&kt LALT &kp KP_NUMBER_4 &kp KP_NUMBER_4 &kt LEFT_ALT>;
+            label = "M9";
         };
 
-        mPlayStop: mPlayStop {
+        m16: m16 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp C_PLAY_PAUSE>,
-                <&macro_wait_time 500>,
-                <&macro_release>,
-                <&kp C_PLAY_PAUSE>;
+            bindings = <&kt LEFT_WIN &kp P &kt LEFT_WIN>;
+            label = "M16";
+        };
 
-            label = "MPLAYSTOP";
+        m4: m4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_CONTROL &kp B &kp U &kt LEFT_CONTROL>;
+            label = "M4";
+        };
+
+        m10: m10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LALT &kp KP_NUMBER_4 &kp KP_NUMBER_7 &kt LEFT_ALT>;
+            label = "M10";
+        };
+
+        m11: m11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LALT &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kt LEFT_ALT>;
+            label = "M11";
+        };
+
+        m14: m14 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C) &kp LA(TAB) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp RCTRL &kp RCTRL &kp LEFT_SHIFT &kp LEFT_SHIFT &kp RCTRL &kp RCTRL &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(F) &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LC(V)>;
+            label = "M14";
+        };
+
+        m15: m15 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LALT &kp KP_NUMBER_6 &kp KP_NUMBER_2 &kt LEFT_ALT>;
+            label = "M15";
+        };
+
+        m8: m8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LALT &kp KP_NUMBER_3 &kp KP_NUMBER_5 &kt LEFT_ALT>;
+            label = "M8";
         };
     };
 
@@ -145,64 +133,46 @@
 
         def {
             bindings = <
-&ht_tap_prior ESCAPE GRAVE          &kp Q  &kp W        &kp E        &kp R            &kp T                   &kp Y        &kp U            &kp I        &kp O        &kp P     &kp LEFT_BRACKET
-&to 3                               &kp A  &kp S        &kp D        &kp F            &kp G                   &kp H        &kp J            &kp K        &kp L        &kp SEMI  &kp SQT
-&ht_tap_prior LCTRL LC(LEFT_SHIFT)  &kp Z  &kp X        &kp C        &kp V            &kp B                   &kp N        &kp M            &kp COMMA    &kp DOT      &kp FSLH  &ht_tap_prior LCTRL RIGHT_BRACKET
-                                           &key_repeat  &lt 2 ENTER  &lt 4 BACKSPACE  &mt LEFT_SHIFT SPACE    &lt 3 SPACE  &lt 1 BACKSPACE  &lt 5 ENTER  &key_repeat
-            >;
-        };
-
-        num {
-            bindings = <
-&kp ESCAPE   &kp KP_MULTIPLY  &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp KP_SLASH       &none           &kp INS          &kp DELETE        &kp RC(PAUSE_BREAK)  &none          &to 0
-&kp KP_PLUS  &kp NUMBER_3     &kp NUMBER_2  &kp NUMBER_1  &kp NUMBER_0  &kp KP_SUBTRACT    &kp UNDERSCORE  &kp RIGHT_SHIFT  &kp LEFT_CONTROL  &kp LALT             &kp RIGHT_WIN  &kp ENTER
-&kp EQUAL    &mCOMMA          &kp N9        &kp NUMBER_8  &kp N7        &mDOT              &to 2           &kp EQUAL        &kp LESS_THAN     &kp GREATER_THAN     &kp SLASH      &kp RCTRL
-                              &none         &trans        &trans        &trans             &trans          &kp BACKSPACE    &sl 6             &none
-            >;
-        };
-
-        F15_media_numpad {
-            bindings = <
-&kp C_MUTE         &kp F1         &kp F2            &kp F3     &kp F4           &kp F5           &kp KP_DIVIDE   &kp KP_N7      &kp KP_NUMBER_8  &kp KP_N9        &kp KP_MULTIPLY  &kp ESCAPE
-&kp C_VOL_UP       &sk LEFT_GUI   &sk LEFT_ALT      &sk LCTRL  &sk LEFT_SHIFT   &mPlayStop       &kp KP_MINUS    &kp KP_N4      &kp KP_N5        &kp KP_NUMBER_6  &kp KP_PLUS      &kp EQUAL
-&kp C_VOLUME_DOWN  &kp LG(LS(T))  &kp LG(KP_MINUS)  &none      &kp LG(KP_PLUS)  &kp LC(LS(T))    &kp KP_NUMLOCK  &kp KP_N1      &kp KP_N2        &kp KP_N3        &kp KP_DOT       &kp E
-                                  &none             &kp ENTER  &trans           &kp SPACE        &lt 3 KP_N0     &kp BACKSPACE  &lt 6 KP_ENTER   &none
+&kp LALT   &kp Q  &kp W          &kp E  &kp R      &kp T    &kp Y     &kp U  &kp I      &kp O        &kp P     &kp RBKT
+&kp LCTRL  &kp A  &kp S          &kp D  &kp F      &kp G    &kp H     &kp J  &kp K      &kp L        &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X          &kp C  &kp V      &kp B    &kp N     &kp M  &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
+                  &kp PAGE_DOWN  &mo 3  &kp SPACE  &mo 1    &kp BSPC  &mo 2  &kp ENTER  &kp PAGE_UP
             >;
         };
 
         nav {
             bindings = <
-&kp ESCAPE  &none         &none         &kp LA(LEFT)  &kp LA(RIGHT)   &kp LC(Y)    &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &msc SCRL_UP     &to 0
-&to 0       &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL     &kp LEFT_SHIFT  &kp TAB      &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT        &msc SCRL_DOWN   &kp ENTER
-&kp LC(A)   &none         &kp LC(X)     &kp LC(C)     &kp LC(V)       &kp LC(Z)    &none          &msc SCRL_LEFT  &kp LS(F10)     &msc SCRL_RIGHT  &kp LC(KP_PLUS)  &kp LC(KP_MINUS)
-                          &none         &kp ENTER     &trans          &trans       &kp SPACE      &kp BACKSPACE   &trans          &none
-            >;
-        };
-
-        symb {
-            bindings = <
-&to 0      &none          &kp F2        &kp DELETE   &kp INSERT      &kp LC(Y)    &kp AMPERSAND   &kp CARET             &kp EXCLAMATION        &kp AT_SIGN       &kp DOLLAR    &kp HASH
-&to 1      &kp LEFT_GUI   &kp LEFT_ALT  &kp LCTRL    &kp LEFT_SHIFT  &kp TAB      &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT       &kp COLON     &kp DOUBLE_QUOTES
-&kp LC(A)  &kp LG(LS(S))  &kp LC(X)     &kp LC(INS)  &kp LS(INS)     &kp LC(Z)    &kp BACKSLASH   &kp EQUAL             &kp LESS_THAN          &kp GREATER_THAN  &kp QUESTION  &kp PIPE
-                          &none         &sl 6        &trans          &trans       &kp SPACE       &kp LC(BACKSPACE)     &kp LC(DEL)            &kp UNDERSCORE
-            >;
-        };
-
-        Func {
-            bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans    &kp F6  &kp F7           &kp F8     &kp F9         &kp F10        &kp F11
-&trans      &trans  &trans  &trans  &trans  &trans    &none   &sk RIGHT_SHIFT  &sk RCTRL  &sk RIGHT_ALT  &sk RIGHT_GUI  &kp F12
-&trans      &trans  &trans  &trans  &trans  &trans    &kp F5  &kp F4           &kp F3     &kp F2         &kp F1         &none
-                    &trans  &mo 6   &trans  &trans    &trans  &trans           &trans     &trans
+&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp LC(RBKT)     &kp BSPC     &msc SCRL_UP          &mkp LCLK             &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
+&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
+&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))  &m8             &m10             &m15    &trans
+                             &trans        &trans     &kp PRINTSCREEN  &trans       &trans                &trans                &trans          &trans
             >;
         };
 
         sys {
             bindings = <
-&bootloader  &none         &none         &bt BT_CLR_ALL  &bt BT_CLR    &none    &kp CAPSLOCK          &kp PRINTSCREEN      &kp SCROLLLOCK  &kp PAUSE_BREAK  &none         &bootloader
-&none        &none         &none         &none           &none         &none    &kp C_AL_MY_COMPUTER  &kp C_AL_CALCULATOR  &none           &none            &none         &kp C_SLEEP
-&sys_reset   &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_SEL 0  &none    &none                 &bt BT_SEL 0         &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &sys_reset
-                           &none         &none           &none         &none    &none                 &none                &none           &none
+&kp GRAVE  &kp LS(LC(UP))    &kp HOME          &kp UP    &kp END            &trans    &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0    &m7
+&m11       &kp LS(LC(DOWN))  &kp LEFT          &kp DOWN  &kp RIGHT          &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp LBKT  &kp LA(G)
+&trans     &trans            &kp LS(LC(LEFT))  &trans    &kp LS(LC(RIGHT))  &m4       &kp MINUS  &kp N1  &kp N2  &kp N3  &trans    &m9
+                             &trans            &trans    &trans             &trans    &trans     &trans  &trans  &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans            &trans  &kp LG(P)  &trans  &trans          &kp INS           &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&kp LC(NUMBER_1)  &trans  &trans     &trans  &trans          &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans            &mo 4   &trans     &trans  &kp SCROLLLOCK  &kp KP_NUMLOCK    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                          &trans     &trans  &trans          &trans            &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_PRV    &bt BT_NXT    &trans        &trans        &trans        &trans
+                &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans
             >;
         };
     };
