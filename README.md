@@ -19,6 +19,11 @@ Tools & Links:
 - [Corne | QWERTY - KeymapDB](https://keymapdb.com/?firmwares=ZMK&baseLayouts=QWERTY&keyboard=Corne)
 - [ZMK Locale Generator](https://github.com/joelspadin/zmk-locale-generator)
 
+## [Fuji Forks](https://github.com/tsbohc/zmk-config-fuji44/forks)
+- [Noidor13](https://github.com/Noidor13/zmk-config-fuji44/blob/main/config/fuji44.keymap)
+- [Memorrian](https://github.com/Memorrian/zmk-config-fuji44/blob/main/config/fuji44.keymap)
+- [Serk70](https://github.com/Serk70/zmk-config-fuji44/blob/main/config/fuji44.keymap)
+
 <img src="./img/fuji44.svg" alt="Keymap layout graphical representation" width="100%" />
 
 > Drawn with [@caksoylar's Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
