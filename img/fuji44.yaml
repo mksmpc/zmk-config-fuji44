@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: fuji44}
 layers:
-  default:
-  - ↹
+  def:
+  - {t: '`', h: ESCAPE}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - Shift
+  - {t: nav, h: toggle}
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT CONTROL
+  - {t: Ctl+Shift, h: Ctrl}
   - Z
   - X
   - C
@@ -36,151 +36,295 @@ layers:
   - ','
   - .
   - /
-  - \
-  - '`'
+  - {t: ']', h: Ctrl}
+  - '&key_repeat'
+  - {t: ⏎, h: F15_media_numpad}
+  - {t: ⌫, h: symb}
+  - {t: ␣, h: Shift}
+  - {t: ␣, h: nav}
+  - {t: ⌫, h: num}
+  - {t: ⏎, h: Func}
+  - '&key_repeat'
+  num:
+  - ESCAPE
+  - KP MULTIPLY
+  - '6'
+  - '5'
+  - '4'
+  - KP SLASH
+  - ''
+  - Insert
+  - DELETE
+  - Ctl+Pause Break
+  - ''
+  - {t: def, h: toggle}
+  - KP PLUS
+  - '3'
+  - '2'
+  - '1'
+  - '0'
+  - KP SUBTRACT
+  - _
+  - Shift
+  - LEFT CONTROL
   - Alt
-  - {t: DELETE, h: lower}
-  - ␣
+  - Win
   - ⏎
-  - {t: ⌫, h: raise}
-  - {t: ⌦, h: RIGHT GUI}
-  - ']'
-  lower:
-  - Esc
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '&'
-  - '7'
-  - '8'
+  - '='
+  - '&mCOMMA'
   - '9'
+  - '8'
+  - '7'
+  - '&mDOT'
+  - {t: F15_media_numpad, h: toggle}
+  - '='
+  - <
+  - '>'
+  - /
+  - Ctrl
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ⌫, type: held}
+  - {t: sys, h: sticky}
+  - ''
+  F15_media_numpad:
+  - MUTE
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - KP DIVIDE
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MULTIPLY
+  - ESCAPE
+  - Vol Up
+  - {t: LEFT GUI, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
+  - '&mPlayStop'
+  - KP MINUS
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - '='
+  - VOLUME DOWN
+  - Gui+Sft+T
+  - Gui+KP MINUS
+  - ''
+  - Gui+KP PLUS
+  - Ctl+Sft+T
+  - KP NUMLOCK
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP DOT
+  - E
+  - ''
+  - {t: ⏎, type: held}
+  - {t: ▽, type: trans}
+  - ␣
+  - {t: KP 0, h: nav}
+  - ⌫
+  - {t: KP ENTER, h: sys}
+  - ''
+  nav:
+  - ESCAPE
+  - ''
+  - ''
+  - Alt+←
+  - Alt+→
+  - Ctl+Y
+  - PAGE UP
+  - Home
+  - UP ARROW
+  - End
+  - Scroll ↑
+  - {t: def, h: toggle}
+  - {t: def, h: toggle}
+  - Win
+  - Alt
+  - Ctrl
+  - Shift
+  - ↹
+  - Page ↓
+  - LEFT ARROW
+  - DOWN ARROW
+  - →
+  - Scroll ↓
+  - ⏎
+  - Select All
+  - ''
+  - Cut
+  - Copy
+  - Ctl+V
+  - Undo
+  - ''
+  - Scroll ←
+  - Sft+F10
+  - Scroll →
+  - Ctl+KP PLUS
+  - Ctl+KP MINUS
+  - ''
+  - ⏎
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ␣, type: held}
+  - ⌫
+  - {t: ▽, type: trans}
+  - ''
+  symb:
+  - {t: def, h: toggle}
+  - ''
+  - F2
+  - DELETE
+  - INSERT
+  - Ctl+Y
+  - '&'
+  - ^
+  - '!'
+  - '@'
+  - $
+  - '#'
+  - {t: num, h: toggle}
+  - LEFT GUI
+  - Alt
+  - Ctrl
+  - Shift
+  - ↹
   - _
   - (
   - )
-  - Shift
-  - ''
-  - ''
-  - ''
-  - +
-  - PAGE UP
-  - '4'
-  - '5'
-  - '6'
-  - ''
-  - UP ARROW
-  - ''
-  - LEFT CONTROL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '%'
+  - ':'
+  - '"'
+  - Select All
+  - Gui+Sft+S
+  - Cut
+  - Ctl+Insert
+  - Paste
+  - Undo
+  - \
   - '='
-  - Page ↓
-  - '1'
-  - '2'
-  - '3'
-  - LEFT ARROW
-  - DOWN ARROW
-  - RIGHT ARROW
-  - {t: ▽, type: trans}
-  - Alt
+  - <
+  - '>'
+  - '?'
+  - '|'
+  - ''
+  - {t: sys, h: sticky}
   - {type: held}
   - {t: ▽, type: trans}
-  - '0'
-  - ⌫
+  - ␣
+  - Ctl+⌫
+  - Ctl+⌦
+  - _
+  Func:
+  - ESCAPE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
-  - Esc
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F6
   - F7
   - F8
   - F9
   - F10
   - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: Shift, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {t: RIGHT ALT, h: sticky}
+  - {t: RIGHT GUI, h: sticky}
   - F12
-  - Shift
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOLUME UP
-  - F4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F5
-  - F6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LEFT CONTROL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - VOLUME DOWN
-  - F1
-  - F2
+  - F4
   - F3
+  - F2
+  - F1
   - ''
-  - ''
-  - PRINTSCREEN
+  - {t: ▽, type: trans}
+  - sys
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - adjust
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - INSERT
-  adjust:
+  sys:
+  - Boot
+  - ''
+  - ''
+  - BT CLR ALL
+  - BT CLR
+  - ''
+  - CAPSLOCK
+  - PRINTSCREEN
+  - SCROLLLOCK
+  - Pause Break
+  - ''
+  - Boot
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - AL MY COMPUTER
+  - AL CALCULATOR
+  - ''
+  - ''
+  - ''
+  - SLEEP
   - Reset
-  - ''
-  - ''
+  - BT 3
+  - BT 2
+  - BT 1
+  - BT 0
   - ''
   - ''
   - BT 0
   - BT 1
-  - ''
-  - ''
-  - ''
-  - ''
-  - Reset
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Boot
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT 3
   - BT 2
-  - ''
-  - ''
+  - BT 3
+  - Reset
   - ''
   - ''
   - ''
   - ''
   - ''
   - {type: held}
-  - ''
-  - ''
   - {type: held}
-  - ''
   - ''
 combos:
-- p: [39, 40]
-  k: BT CLR
-  l: [adjust]
+- p: [18, 19]
+  k: _
+  l: [def]
+- p: [12, 24]
+  k: Ctl+Shift
+  l: [def]
+- p: [16, 17]
+  k: KP MINUS
+  l: [def]
+- p: [16, 17]
+  k: Win Prev
+  l: [nav, symb]
