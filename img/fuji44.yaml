@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: fuji44}
 layers:
   def:
-  - ESC
+  - Esc
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '-'
-  - LCTRL
+  - Ctrl
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSHFT
+  - Shift
   - Z
   - X
   - C
@@ -38,12 +38,12 @@ layers:
   - /
   - \
   - '['
-  - LGUI
-  - {t: TAB, h: nav}
-  - {t: SPACE, h: sys}
+  - Gui
+  - {t: ↹, h: nav}
+  - {t: ␣, h: sys}
   - {t: ENTER, h: num}
   - {t: BACKSPACE, h: sym}
-  - RALT
+  - Alt
   - ']'
   nav:
   - {t: ▽, type: trans}
@@ -61,13 +61,13 @@ layers:
   - {t: ▽, type: trans}
   - LEFT WIN
   - LEFT ALT
-  - LCTRL
+  - Ctrl
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,10 +76,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
+  - Home
   - PAGE DOWN
-  - PG UP
-  - END
+  - Page ↑
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -91,7 +91,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   sys:
-  - '&bootloader'
+  - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -102,7 +102,7 @@ layers:
   - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&bootloader'
+  - Boot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -115,18 +115,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
+  - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - '&sys_reset'
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - Reset
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -156,8 +156,8 @@ layers:
   - '='
   - {t: ▽, type: trans}
   - RIGHT SHIFT
-  - RCTRL
-  - LALT
+  - Ctrl
+  - Alt
   - RIGHT WIN
   - {t: ▽, type: trans}
   - )
@@ -175,7 +175,7 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
+  - ␣
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -201,7 +201,7 @@ layers:
   - '='
   - {t: ▽, type: trans}
   - RSHIFT
-  - RCTRL
+  - Ctrl
   - LEFT ALT
   - RIGHT WIN
   - {t: ▽, type: trans}
@@ -220,11 +220,12 @@ layers:
   - )
   - '`'
   - {t: ▽, type: trans}
-  - SPACE
+  - ␣
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [0, 1]
-  k: ESC
+  k: Esc
+  draw_separate: true
