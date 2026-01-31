@@ -64,10 +64,16 @@ parse_config:
     RCTRL: Ctrl
     LALT: Alt
     RALT: Alt
+    LEFT_ALT: Alt
+    LEFT_WIN: Win
+    RIGHT_WIN: Win
     LGUI: Win
     RGUI: Win
     LSHFT: Shift
+    LEFT_SHIFT: Shift
     RSHFT: Shift
+    RSHIFT: Shift
+    RIGHT_SHIFT: Shift
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
@@ -78,6 +84,7 @@ parse_config:
     DEL: ⌦
 
     PG_UP: Page ↑
+    PAGE_DOWN: Page ↓
     PG_DN: Page ↓
     INS: Insert
     HOME: Home
