@@ -8,8 +8,8 @@ config SHIELD_FUJI44_RIGHT
     def_bool $(shields_list_contains,fuji44_right)
 
 # Enable mouse support
-config ZMK_MOUSE
-    default y
+#config ZMK_MOUSE
+#    default y
 
-config ZMK_POINTING
-    default y
+#config ZMK_POINTING
+#    default y
