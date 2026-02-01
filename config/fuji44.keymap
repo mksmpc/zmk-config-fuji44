@@ -133,19 +133,19 @@
 
         def {
             bindings = <
-&kp TAB           &kp Q  &kp W         &kp E           &kp R      &kp T    &kp Y     &kp U  &kp I      &kp O        &kp P     &kp RBKT
-&kp LEFT_SHIFT    &kp A  &kp S         &kp D           &kp F      &kp G    &kp H     &kp J  &kp K      &kp L        &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X         &kp C           &kp V      &kp B    &kp N     &kp M  &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
-                         &kp LEFT_WIN  &lt 3 LEFT_ALT  &kp SPACE  &mo 1    &kp BSPC  &mo 2  &kp ENTER  &kp PAGE_UP
+&kp TAB           &kp Q  &kp W         &kp E  &kp R      &kp T    &kp Y     &kp U        &kp I         &kp O        &kp P     &kp RBKT
+&kp LEFT_SHIFT    &kp A  &kp S         &kp D  &kp F      &kp G    &kp H     &kp J        &kp K         &kp L        &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X         &kp C  &kp V      &kp B    &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH  &mt RSHFT ENTER
+                         &kp LEFT_WIN  &mo 3  &kp SPACE  &mo 1    &kp BSPC  &lt 2 ENTER  &kp LEFT_ALT  &kp PAGE_UP
             >;
         };
 
         nav {
             bindings = <
-&kp ESC   &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp LC(RBKT)     &kp BSPC     &msc SCRL_UP          &mkp LCLK             &mmv MOVE_UP    &mkp RCLK        &trans  &kp PG_UP
-&m14      &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp PAGE_DOWN
-&kp CAPS  &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))  &m8             &m10             &m15    &trans
-                             &trans        &trans     &kp PRINTSCREEN  &trans       &mkp LCLK             &trans                &trans          &trans
+&kp LA(TAB)  &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp LC(RBKT)     &kp BSPC     &msc SCRL_UP          &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
+&kp LC(A)    &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
+&kp CAPS     &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))   &m8                    &m10             &m15    &trans
+                                &trans        &trans     &kp PRINTSCREEN  &trans       &mkp LCLK             &mouse_key_press LCLK  &mouse_key_press RCLK  &trans
             >;
         };
 
