@@ -145,7 +145,7 @@
 &kp LA(TAB)  &kp LC(PAGE_DOWN)  &kp LC(LBKT)  &kp RET    &kp LC(RBKT)     &kp BSPC     &msc SCRL_UP          &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
 &kp LC(A)    &kp LG(M)          &m9           &kp LALT   &kp TAB          &kp DEL      &msc SCRL_DOWN        &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
 &kp CAPS     &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp LC(B)    &kp LS(LC(NUMBER_6))  &kp LS(LC(NUMBER_4))   &m8                    &m10             &m15    &trans
-                                &trans        &trans     &kp PRINTSCREEN  &trans       &mkp LCLK             &mouse_key_press LCLK  &mouse_key_press RCLK  &trans
+                                &trans        &trans     &kp PRINTSCREEN  &trans       &mkp LCLK             &mouse_key_press LCLK  &mouse_key_press RCLK  &tog 1
             >;
         };
 
