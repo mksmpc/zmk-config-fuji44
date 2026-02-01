@@ -89,7 +89,7 @@ layers:
   - Left Click
   - '&mouse_key_press LCLK'
   - '&mouse_key_press RCLK'
-  - {t: ▽, type: trans}
+  - {t: nav, h: toggle}
   sys:
   - '`'
   - Sft+Ctl+↑
