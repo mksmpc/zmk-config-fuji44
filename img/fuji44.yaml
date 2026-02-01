@@ -36,29 +36,29 @@ layers:
   - ','
   - .
   - /
-  - Shift
+  - {t: ⏎, h: Shift}
   - Win
-  - {t: Alt, h: num}
+  - num
   - ␣
   - nav
   - ⌫
-  - sys
-  - ⏎
+  - {t: ⏎, h: sys}
+  - Alt
   - PAGE UP
   nav:
-  - Esc
+  - Alt+↹
   - Ctl+Page ↓
   - Ctl+[
   - ⏎
   - Ctl+]
   - ⌫
   - Scroll ↑
-  - Left Click
+  - Scroll ←
   - Mouse ↑
-  - Right Click
+  - Scroll →
   - {t: ▽, type: trans}
-  - Page ↑
-  - '&m14'
+  - ⌫
+  - Select All
   - Gui+M
   - '&m9'
   - Alt
@@ -69,7 +69,7 @@ layers:
   - Mouse ↓
   - Mouse →
   - {t: ▽, type: trans}
-  - Page ↓
+  - DELETE
   - Caps Lock
   - Undo
   - Cut
@@ -87,8 +87,8 @@ layers:
   - PRINTSCREEN
   - {type: held}
   - Left Click
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mouse_key_press LCLK'
+  - '&mouse_key_press RCLK'
   - {t: ▽, type: trans}
   sys:
   - '`'
