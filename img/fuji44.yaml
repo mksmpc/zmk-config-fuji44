@@ -1,7 +1,50 @@
 layout: {zmk_keyboard: fuji44}
 layers:
-  def: [Alt, Q, W, E, R, T, Y, U, I, O, P, ']', Ctrl, A, S, D, F, G, H, J, K, L, ;, '''', Shift, Z, X, C, V, B, N, M, ',', ., /, Shift, Page ↓, num, ␣, nav, ⌫, sys,
-    ⏎, PAGE UP]
+  def:
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ']'
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LEFT CONTROL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Shift
+  - Win
+  - {t: Alt, h: num}
+  - ␣
+  - nav
+  - ⌫
+  - sys
+  - ⏎
+  - PAGE UP
   nav:
   - Esc
   - Ctl+Page ↓
@@ -43,7 +86,7 @@ layers:
   - {t: ▽, type: trans}
   - PRINTSCREEN
   - {type: held}
-  - {t: ▽, type: trans}
+  - Left Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
