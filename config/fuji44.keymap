@@ -41,7 +41,7 @@
         undersor {
             bindings = <&kp UNDERSCORE>;
             key-positions = <20 21>;
-            timeout-ms = <50>;
+            timeout-ms = <25>;
             layers = <0 3>;
         };
     };
@@ -75,8 +75,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM_FUNC";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 3 ENTER>, <&mo FUN>;
+            tapping-term-ms = <250>;
+            bindings = <&lt NUM ENTER>, <&mo FUN>;
         };
 
         td_ctrl_shift: td_ctrl_shift {
