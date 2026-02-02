@@ -38,8 +38,8 @@ layers:
   - /
   - {t: ⏎, h: Shift}
   - '['
-  - ⏎
-  - {t: '&td_space_num_func', s: ⌫}
+  - '&td_num_func'
+  - {t: ␣, s: ⌫}
   - '&td_nav'
   - ⌫
   - ␣
@@ -51,7 +51,7 @@ layers:
   - Ctl+W
   - ⏎
   - Ctl+]
-  - Win
+  - ⌦
   - Scroll ↑
   - Scroll ←
   - Mouse ↑
@@ -62,8 +62,8 @@ layers:
   - Select All
   - Ctl+S
   - Alt
-  - ↹
-  - ⌦
+  - ⏎
+  - LEFT GUI
   - Scroll ↓
   - Mouse ←
   - Mouse ↓
@@ -75,7 +75,7 @@ layers:
   - Cut
   - Copy
   - Ctl+V
-  - Ctl+B
+  - trans
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
