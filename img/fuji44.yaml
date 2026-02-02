@@ -41,7 +41,7 @@ layers:
   - '&td_num_func'
   - {t: ␣, s: ⌫}
   - '&td_nav'
-  - ⌫
+  - {t: ⌫, s: ⌦}
   - ␣
   - {t: ⏎, h: num}
   - ']'
@@ -75,7 +75,7 @@ layers:
   - Cut
   - Copy
   - Ctl+V
-  - trans
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
