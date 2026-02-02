@@ -274,3 +274,7 @@ combos:
 - p: [0, 1]
   k: Esc
   draw_separate: true
+- p: [15, 16]
+  k: (
+- p: [19, 20]
+  k: )
