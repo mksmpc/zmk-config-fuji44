@@ -6,8 +6,8 @@
  */
 
 #define DEF 0
-#define MNAV   1
-#define ARNAV   2
+#define NAV   1
+#define MNAV   2
 #define NUM   3
 #define FUN   4
 #define BT   5
@@ -68,17 +68,24 @@
             label = "TD_NAV";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo MNAV>, <&mo ARNAV>;
+            bindings = <&mo NAV>, <&mo MNAV>;
         };
 
-        td_num_func: td_num_func {
+        td_en_num_func: td_en_num_func {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM_FUNC";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo NUM>, <&mo FUN>;
+            tapping-term-ms = <150>;
+            bindings = <&mt NUM ENTER>, <&mo FUN>;
         };
 
+        td_ctrl_shift: td_ctrl_shift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_CONTROL>, <&kp LS(LEFT_CONTROL)>;
+        };
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -103,26 +110,28 @@
             bindings = <
 &kp TAB              &kp Q  &kp W             &kp E         &kp R      &kp T      &kp Y      &kp U      &kp I          &kp O              &kp P     &kp RBKT
 &mt LSHIFT CAPSLOCK  &kp A  &kp S             &kp D         &kp F      &kp G      &kp H      &kp J      &kp K          &kp L              &kp SEMI  &kp SQT
-&kp LEFT_CONTROL     &kp Z  &kp X             &kp C         &kp V      &kp B      &kp N      &kp M      &kp COMMA      &kp DOT            &kp FSLH  &mt LSHFT ENTER
-                            &kp LEFT_BRACKET  &td_num_func  &spc_bspc  &td_nav    &bspc_del  &kp SPACE  &lt NUM ENTER  &kp RIGHT_BRACKET
+&td_ctrl_shift       &kp Z  &kp X             &kp C         &kp V      &kp B      &kp N      &kp M      &kp COMMA      &kp DOT            &kp FSLH  &mt LSHFT ENTER
+                            &kp LEFT_BRACKET  &td_en_num_func  &spc_bspc  &td_nav    &bspc_del  &kp SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
+
+
 
         nav {
             bindings = <
-&kp LS(LC(TAB))  &kp LC(Q)  &kp LC(W)  &kp RET    &kp LC(LS(T))    &kp LC(T)       &msc SCRL_UP    &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
-&trans           &kp LC(A)  &kp LC(S)  &kp LALT   &kp ENTER        &kp LEFT_GUI    &msc SCRL_DOWN  &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
-&trans           &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &trans          &trans          &trans                 &trans                 &trans           &trans  &trans
-                            &kp CAPS   &trans     &kp PRINTSCREEN  &trans          &mkp LCLK       &mouse_key_press LCLK  &mouse_key_press RCLK  &tog MNAV
+&kp LS(LC(TAB))  &kp LC(Q)  &kp LC(W)  &kp RET    &kp LC(LS(T))    &kp LC(T)              &trans  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &trans
+&trans           &kp LC(A)  &kp LC(S)  &kp LALT   &kp ENTER        &kp LEFT_GUI    &trans  &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &trans
+&trans           &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &trans              &trans  &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &trans  &trans
+                          &kp PRINTSCREEN            &trans            &trans            &trans              &trans  &trans           &trans         &tog NAV
             >;
         };
 
-        nav_arrows {
+        m_nav {
             bindings = <
-&trans  &trans            &trans            &trans            &trans            &trans              &trans  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &trans
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans              &trans  &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &trans  &trans
-                          &trans            &trans            &trans            &trans              &trans  &trans           &trans         &tog ARNAV
+&trans      &trans  &trans       &kp LG(E)  &kp LG(T)  &trans       &msc SCRL_UP    &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &msc SCRL_DOWN  &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
+&trans      &trans  &trans       &trans  &trans  &trans          &trans          &trans                 &trans                 &trans           &trans  &trans
+                            &trans   &trans     &trans  &trans          &mkp LCLK       &mkp RCLK  &kp LA(ENTER)         &tog MNAV
             >;
         };
 
