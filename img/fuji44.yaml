@@ -47,7 +47,7 @@ layers:
   - ']'
   nav:
   - Sft+Ctl+↹
-  - Alt+↹
+  - Ctl+Q
   - Ctl+W
   - ⏎
   - Ctl+]
