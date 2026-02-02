@@ -49,8 +49,8 @@ layers:
   - Alt+↹
   - Ctl+Q
   - Ctl+W
+  - Ctl+E
   - Ctl+R
-  - Ctl+Sft+T
   - Ctl+T
   - {t: ▽, type: trans}
   - Sft+Ctl+↹
@@ -75,7 +75,7 @@ layers:
   - Cut
   - Copy
   - Ctl+V
-  - {t: Alt, h: sticky}
+  - Sft+Ctl+Z
   - {t: ▽, type: trans}
   - Sft+Gui+↹
   - Gui+`
