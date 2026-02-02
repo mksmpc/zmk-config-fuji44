@@ -46,10 +46,10 @@ layers:
   - {t: ⏎, h: Alt}
   - ']'
   nav:
-  - Sft+Ctl+↹
+  - Alt+↹
   - Ctl+Q
   - Ctl+W
-  - ⏎
+  - Ctl+R
   - Ctl+Sft+T
   - Ctl+T
   - {t: ▽, type: trans}
@@ -61,8 +61,8 @@ layers:
   - {t: ▽, type: trans}
   - Select All
   - Ctl+S
-  - Alt
-  - ⏎
+  - Ctl+D
+  - Ctl+F
   - LEFT GUI
   - {t: ▽, type: trans}
   - ←
@@ -75,7 +75,7 @@ layers:
   - Cut
   - Copy
   - Ctl+V
-  - {t: ▽, type: trans}
+  - {t: Alt, h: sticky}
   - {t: ▽, type: trans}
   - Sft+Gui+↹
   - Gui+`
@@ -137,9 +137,9 @@ layers:
   - {t: m_nav, h: toggle}
   num:
   - '`'
-  - Sft+Ctl+↑
+  - {t: ▽, type: trans}
   - Home
-  - ↑
+  - Ctl+↑
   - End
   - {t: ▽, type: trans}
   - '='
@@ -149,10 +149,10 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+Ctl+↓
-  - ←
-  - ↓
-  - →
+  - Sft+Ctl+↑
+  - Ctl+←
+  - Ctl+↓
+  - Ctl+→
   - {t: ▽, type: trans}
   - +
   - '4'
@@ -161,7 +161,7 @@ layers:
   - '*'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sft+Ctl+↓
   - Sft+Ctl+←
   - {t: ▽, type: trans}
   - Sft+Ctl+→
@@ -266,7 +266,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Boot
