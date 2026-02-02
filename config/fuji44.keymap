@@ -111,7 +111,7 @@
 
         nav {
             bindings = <
-&kp LS(LC(TAB))  &kp LC(Q)  &kp LC(W)  &kp RET    &kp LC(RBKT)     &kp DEL         &msc SCRL_UP    &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
+&kp LS(LC(TAB))  &kp LC(Q)  &kp LC(W)  &kp RET    &kp LC(LS(T))    &kp LC(T)       &msc SCRL_UP    &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
 &trans           &kp LC(A)  &kp LC(S)  &kp LALT   &kp ENTER        &kp LEFT_GUI    &msc SCRL_DOWN  &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
 &trans           &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &trans          &trans          &trans                 &trans                 &trans           &trans  &trans
                             &kp CAPS   &trans     &kp PRINTSCREEN  &trans          &mkp LCLK       &mouse_key_press LCLK  &mouse_key_press RCLK  &tog MNAV
@@ -120,8 +120,8 @@
 
         nav_arrows {
             bindings = <
-&trans  &trans            &trans            &trans            &trans            &trans              &trans  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &kp BACKSPACE
-&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &kp DELETE
+&trans  &trans            &trans            &trans            &trans            &trans              &trans  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &trans
 &trans  &trans            &trans            &trans            &trans            &trans              &trans  &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &trans  &trans
                           &trans            &trans            &trans            &trans              &trans  &trans           &trans         &tog ARNAV
             >;
@@ -132,13 +132,13 @@
 &kp GRAVE  &kp LS(LC(UP))    &kp HOME          &kp UP    &kp END            &trans    &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0        &trans
 &trans     &kp LS(LC(DOWN))  &kp LEFT          &kp DOWN  &kp RIGHT          &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
 &trans     &trans            &kp LS(LC(LEFT))  &trans    &kp LS(LC(RIGHT))  &trans    &kp MINUS  &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
-                             &trans            &trans    &trans             &trans    &trans     &trans  &trans  &trans
+                             &trans            &trans    &trans             &trans    &trans     &trans  &trans  &tog 3
             >;
         };
 
         fun {
             bindings = <
-&trans  &trans  &kp LS(LC(TAB))  &trans  &kp LC(TAB)     &none             &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &kp LS(LC(TAB))  &trans  &kp LC(TAB)     &trans            &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans           &trans  &trans          &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans  &mo BT  &trans           &trans  &kp SCROLLLOCK  &kp KP_NUMLOCK    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                 &trans           &trans  &trans          &trans            &trans  &trans  &trans  &trans
