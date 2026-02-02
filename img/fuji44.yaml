@@ -159,7 +159,7 @@ layers:
   - '5'
   - '6'
   - '*'
-  - trans
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Sft+Ctl+←
