@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM_FUNC";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <180>;
             bindings = <&lt NUM ENTER>, <&mo FUN>;
         };
 
