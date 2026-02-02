@@ -38,8 +38,8 @@ layers:
   - /
   - {t: ⏎, h: Shift}
   - '['
-  - {t: ⏎, h: num}
-  - {t: ␣, s: ⌫}
+  - ⏎
+  - {t: '&td_space_num_func', s: ⌫}
   - '&td_nav'
   - ⌫
   - ␣
@@ -173,12 +173,12 @@ layers:
   - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   fun:
   - {t: ▽, type: trans}
@@ -206,7 +206,7 @@ layers:
   - F11
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - fun
+  - bluetooth
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - SCROLLLOCK
@@ -225,7 +225,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '4':
+  bluetooth:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -251,7 +251,7 @@ layers:
   - {t: ▽, type: trans}
   - BT CLR ALL
   - Reset
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
