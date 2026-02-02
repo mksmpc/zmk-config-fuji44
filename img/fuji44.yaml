@@ -245,8 +245,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - OUT TOG
-  - {t: ▽, type: trans}
+  - Out USB
+  - Out BLE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
