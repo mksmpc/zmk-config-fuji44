@@ -40,7 +40,7 @@
     spc_bspc: space_backspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
+            bindings = <&td_space_num_func, <&kp BACKSPACE>;
             mods = <(MOD_LSFT)>;
         };
 
@@ -60,12 +60,12 @@
             bindings = <&mo MNAV>, <&mo ARNAV>;
         };
 
-        td_num_func: kh_hs_tapdance {
+        td_space_num_func: kh_hs_tapdance {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_NAV";
+            label = "TD_SP_NUM_FUNC";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo NUM>, <&mo FUN>;
+            bindings = <&lt NUM SPACE>, <&mo FUN>;
         };
 
 
@@ -101,7 +101,7 @@
 &kp TAB           &kp Q  &kp W         &kp E        &kp R      &kp T    &kp Y     &kp U        &kp I         &kp O        &kp P     &kp RBKT
 &&mt LSHIFT CAPSLOCK    &kp A  &kp S         &kp D        &kp F      &kp G    &kp H     &kp J        &kp K         &kp L        &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C        &kp V      &kp B    &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH  &mt LSHFT ENTER
-                         &kp LEFT_BRACKET   &lt 3 ENTER  &spc_bspc  &td_nav    &kp BSPC  &kp  SPACE &lt NUM ENTER  &kp RIGHT_BRACKET
+                         &kp LEFT_BRACKET   &kp ENTER  &spc_bspc  &td_nav    &kp BSPC  &kp  SPACE &lt NUM ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -136,12 +136,12 @@
             bindings = <
 &trans            &trans            &kp LS(LC(TAB))   &trans            &kp LC(TAB)       &none             &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans            &trans            &trans            &trans            &trans            &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans            &mo 4             &trans            &trans            &kp SCROLLLOCK    &kp KP_NUMLOCK    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+&trans            &mo BT             &trans            &trans            &kp SCROLLLOCK    &kp KP_NUMLOCK    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
                                     &trans            &trans            &trans            &trans            &trans  &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        bluetooth {
             bindings = <
 &trans      &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &trans      &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
