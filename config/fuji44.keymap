@@ -22,9 +22,9 @@
         compatible = "zmk,combos";
 
         combo_esc {
-            timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+            layers = <1>;
         };
 
         par_l {
@@ -35,6 +35,12 @@
         par_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
         };
     };
 
