@@ -24,7 +24,6 @@
         combo_esc {
             key-positions = <0 1>;
             bindings = <&kp ESC>;
-            layers = <1>;
         };
 
         par_l {
