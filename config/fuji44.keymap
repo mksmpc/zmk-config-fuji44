@@ -37,10 +37,17 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-    spc_bspc: space_backspace {
+    spc_bspc: spc_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE, <&kp BACKSPACE>;
+            mods = <(MOD_LSFT)>;
+        };
+
+    bspc_del: space_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE, <&kp DEL>;
             mods = <(MOD_LSFT)>;
         };
 
@@ -101,7 +108,7 @@
 &kp TAB           &kp Q  &kp W         &kp E        &kp R      &kp T    &kp Y     &kp U        &kp I         &kp O        &kp P     &kp RBKT
 &&mt LSHIFT CAPSLOCK    &kp A  &kp S         &kp D        &kp F      &kp G    &kp H     &kp J        &kp K         &kp L        &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X         &kp C        &kp V      &kp B    &kp N     &kp M        &kp COMMA     &kp DOT      &kp FSLH  &mt LSHFT ENTER
-                         &kp LEFT_BRACKET   &td_num_func  &spc_bspc  &td_nav    &kp BSPC  &kp  SPACE &lt NUM ENTER  &kp RIGHT_BRACKET
+                         &kp LEFT_BRACKET   &td_num_func  &spc_bspc  &td_nav    &bspc_del  &kp  SPACE &lt NUM ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -109,7 +116,7 @@
             bindings = <
 &kp LS(LC(TAB))  &kp LA(TAB)        &kp LC(W)     &kp RET    &kp LC(RBKT)     &kp DEL    &msc SCRL_UP          &msc SCRL_LEFT         &mmv MOVE_UP           &msc SCRL_RIGHT  &trans  &kp BACKSPACE
 &trans           &kp LC(A)          &kp LC(S)     &kp LALT   &kp ENTER          &kp LEFT_GUI      &msc SCRL_DOWN        &mmv MOVE_LEFT         &mmv MOVE_DOWN         &mmv MOVE_RIGHT  &trans  &kp DELETE
-&trans           &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &kp trans    &trans                &trans                 &trans                 &trans           &trans    &trans
+&trans           &kp LC(Z)          &kp LC(X)     &kp LC(C)  &kp LC(V)        &trans    &trans                &trans                 &trans                 &trans           &trans    &trans
                                     &kp CAPS      &trans     &kp PRINTSCREEN  &trans       &mkp LCLK             &mouse_key_press LCLK  &mouse_key_press RCLK  &tog MNAV
             >;
         };
