@@ -277,7 +277,10 @@ combos:
   draw_separate: true
 - p: [15, 16]
   k: (
+  l: [def, num]
 - p: [19, 20]
   k: )
+  l: [def, num]
 - p: [20, 21]
   k: _
+  l: [def, num]
