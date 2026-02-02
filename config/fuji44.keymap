@@ -75,8 +75,8 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM_FUNC";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&mt NUM ENTER>, <&mo FUN>;
+            tapping-term-ms = <200>;
+            bindings = <&lt NUM ENTER>, <&mo FUN>;
         };
 
         td_ctrl_shift: td_ctrl_shift {
