@@ -52,7 +52,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
-        td_nav: kh_hs_tapdance {
+        td_nav: td_nav_mnav {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NAV";
             #binding-cells = <0>;
@@ -60,7 +60,7 @@
             bindings = <&mo MNAV>, <&mo ARNAV>;
         };
 
-        td_num_func: kh_hs_tapdance {
+        td_num_func: td_num_func {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM_FUNC";
             #binding-cells = <0>;
