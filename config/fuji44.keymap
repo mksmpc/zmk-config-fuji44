@@ -30,17 +30,20 @@
         par_l {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <15 16>;
+            layers = <0 3>;
         };
 
         par_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
+            layers = <0 3>;
         };
 
-        underscore {
+        undersor {
             bindings = <&kp UNDERSCORE>;
             key-positions = <20 21>;
             timeout-ms = <50>;
+            layers = <0 3>;
         };
     };
 
