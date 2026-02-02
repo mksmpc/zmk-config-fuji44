@@ -52,7 +52,7 @@ layers:
   - Ctl+E
   - Ctl+R
   - Ctl+T
-  - {t: ▽, type: trans}
+  - Ctl+Y
   - Sft+Ctl+↹
   - ↑
   - Tab →
