@@ -51,7 +51,7 @@
         spc_bspc: spc_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SPACE, <&kp BACKSPACE>;
+            bindings = <&kp SPACE>, <&kp BACKSPACE>;
 
             mods = <(MOD_LSFT)>;
         };
@@ -59,7 +59,7 @@
         bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE, <&kp DEL>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             mods = <(MOD_LSFT)>;
         };
