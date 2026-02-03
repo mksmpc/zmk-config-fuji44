@@ -37,7 +37,7 @@ layers:
   - .
   - {t: /, h: LEFT CONTROL}
   - {t: ⏎, h: Shift}
-  - '`'
+  - {t: '`', s: ⌫}
   - {t: ⏎, h: num}
   - {t: ␣, h: LEFT CONTROL}
   - '&td_nav'
