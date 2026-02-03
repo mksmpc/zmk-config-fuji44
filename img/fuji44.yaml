@@ -14,7 +14,7 @@ layers:
   - P
   - '['
   - {t: CAPSLOCK, h: LSHIFT}
-  - A
+  - {t: A, h: LSHIFT}
   - S
   - D
   - F
@@ -23,10 +23,10 @@ layers:
   - J
   - K
   - L
-  - ;
+  - '&td_ctrl_shift_semi'
   - ''''
   - '&td_ctrl_shift'
-  - Z
+  - '&td_ctrl_shift_z'
   - X
   - C
   - V
@@ -35,13 +35,13 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: LEFT CONTROL}
   - {t: ⏎, h: Shift}
   - '`'
   - {t: ⏎, h: num}
-  - {t: ␣, s: ␣}
+  - {t: ␣, h: LEFT CONTROL}
   - '&td_nav'
-  - {t: ⌫, s: ⌫}
+  - {t: ⌫, s: ⌦}
   - {t: ␣, h: LEFT GUI}
   - {t: ⏎, h: Alt}
   - ']'
