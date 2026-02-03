@@ -50,8 +50,8 @@
     behaviors {
         cs_morph_ctrl: cs_morph_ctrl {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            binding-cells = <2>;
+            #bindings = <&kp>, <&kp>;
             mods = <(MOD_LCTL)>;
         };
         spc_bspc: spc_bspc {
