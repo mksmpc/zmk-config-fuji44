@@ -39,8 +39,8 @@ layers:
   - {t: ⏎, h: Shift}
   - '`'
   - {t: ⏎, h: num}
-  - '&td_nav'
   - {t: ␣, s: ␣}
+  - '&td_nav'
   - {t: ⌫, s: ⌫}
   - {t: ␣, h: LEFT GUI}
   - {t: ⏎, h: Alt}
@@ -63,7 +63,7 @@ layers:
   - Ctl+S
   - Ctl+D
   - Ctl+F
-  - LEFT GUI
+  - Ctl+G
   - {t: ▽, type: trans}
   - ←
   - ↓
@@ -142,11 +142,11 @@ layers:
   - '3'
   - '4'
   - '5'
-  - KP ASTERISK
+  - KP PLUS
   - '7'
   - '8'
   - '9'
-  - KP PLUS
+  - '='
   - \
   - {t: ▽, type: trans}
   - '!'
@@ -154,11 +154,11 @@ layers:
   - '#'
   - $
   - '%'
-  - /
+  - KP MINUS
   - '4'
   - '5'
   - '6'
-  - KP MINUS
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ^
@@ -166,7 +166,7 @@ layers:
   - fun
   - ''
   - ''
-  - '='
+  - KP ASTERISK
   - '1'
   - '2'
   - '3'
