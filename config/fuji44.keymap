@@ -48,7 +48,20 @@
     };
 
     behaviors {
+        cs_morph_ctrl: cs_morph_ctrl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LCTL)>;
+        };
         spc_bspc: spc_bspc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&cs_morph_ctrl SPACE BACKSPACE>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        spc_bspc_bckup: spc_bspc_bckup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp BACKSPACE>;
@@ -57,6 +70,13 @@
         };
 
         bspc_del: bspc_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&cs_morph_ctrl SPACE BACKSPACE>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bspc_del_bckup: bspc_del_bckup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DEL>;
