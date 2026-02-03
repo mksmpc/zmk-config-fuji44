@@ -48,28 +48,42 @@
 
         s_quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <28 27>;
+            key-positions = <21 22>;
             layers = <0 3>;
             timeout-ms = <25>;
         };
 
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <28 27 26>;
+            key-positions = <21 22 20>;
             timeout-ms = <25>;
             layers = <0 3>;
         };
 
         l_brace {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 16 14>;
             layers = <0 3>;
         };
 
         r_brace {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20 21>;
             layers = <0 3>;
+        };
+
+        yo {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 4>;
+            layers = <0>;
+            timeout-ms = <25>;
+        };
+
+        he {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <9 10>;
+            require-prior-idle-ms = <25>;
+            layers = <0>;
         };
     };
 
@@ -162,10 +176,10 @@
 
         def {
             bindings = <
-&kp TAB              &kp Q             &kp W          &kp E          &kp R                   &kp T      &kp Y      &kp U               &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
-&kp LS(LEFT_CONTROL)  &mt LSHIFT A      &kp S          &kp D          &lt FUN F               &kp G      &kp H      &kp J               &kp K           &kp L              &mt LSHIFT SEMI   &kp SQT
-&kp LEFT_CONTROL     &mt LEFT_CONTROL Z  &kp X          &kp C          &kp V                   &kp B      &kp N      &kp M               &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
-                                       &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+&kp TAB               &kp Q               &kp W      &kp E          &kp R                   &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
+&kp LS(LEFT_CONTROL)  &mt LSHIFT A        &kp S      &kp D          &lt FUN F               &kp G      &kp H          &kp J               &kp K           &kp L              &mt LSHIFT SEMI        &kp SQT
+&kp LEFT_CONTROL      &mt LEFT_CONTROL Z  &kp X      &kp C          &kp V                   &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
+                                          &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -183,25 +197,25 @@
 &trans  &trans            &trans            &kp LG(E)         &kp LG(T)         &trans              &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans  &kp BACKSPACE
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp DELETE
 &trans  &trans            &trans            &trans            &trans            &trans              &trans          &trans          &trans          &trans           &trans  &trans
-                          &none            &trans            &trans            &trans              &mkp LCLK       &mkp RCLK       &trans          &tog MNAV
+                          &none             &trans            &trans            &trans              &mkp LCLK       &mkp RCLK       &trans          &tog MNAV
             >;
         };
 
         num {
             bindings = <
 &trans  &kp N1     &kp N2    &kp N3    &kp N4      &kp N5       &kp KP_PLUS      &kp N7  &kp N8  &kp N9  &kp EQUAL   &kp BSLH
-&trans     &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp KP_MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH    &trans
-&trans     &kp CARET  &kp AMPS  &mo FUN   &none       &none        &kp KP_ASTERISK  &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
-                      &none    &trans    &trans      &trans       &trans           &trans  &trans  &kp N0
+&trans  &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp KP_MINUS     &kp N4  &kp N5  &kp N6  &kp FSLH    &trans
+&trans  &kp CARET  &kp AMPS  &mo FUN   &none       &none        &kp KP_ASTERISK  &kp N1  &kp N2  &kp N3  &kp KP_DOT  &trans
+                   &none     &trans    &trans      &trans       &trans           &trans  &trans  &kp N0
             >;
         };
 
         fun {
             bindings = <
-&trans  &none  &none   &none   &none   &none     &none   &kp F7         &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LSHIFT  &none   &none   &none   &none     &none   &kp F4         &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp LEFT_CONTROL  &mo BT  &none   &none   &none     &none   &kp F1         &kp F2  &kp F3  &kp F12  &trans
-               &none  &trans   &kp BACKSPACE &trans    &kp DEL  &kp LG(SPACE)  &trans  &none
+&trans  &none             &none   &none   &none          &none     &none    &kp F7         &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp LSHIFT        &none   &none   &none          &none     &none    &kp F4         &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp LEFT_CONTROL  &mo BT  &none   &none          &none     &none    &kp F1         &kp F2  &kp F3  &kp F12  &trans
+                          &none   &trans  &kp BACKSPACE  &trans    &kp DEL  &kp LG(SPACE)  &trans  &none
             >;
         };
 
