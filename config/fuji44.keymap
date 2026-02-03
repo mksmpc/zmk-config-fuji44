@@ -154,8 +154,8 @@
         num {
             bindings = <
 &kp GRAVE      &kp N1         &kp N2        &kp N3        &kp N4      &kp N5           &kp KP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &kp BSLH
-&kp LS(TILDE)  &kp EXCL       &kp AT        &kp HASH      &kp DOLLAR  &kp LS(PRCNT)    &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
-&none          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &trans      &trans           &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
+&kp TILDE  &kp EXCL       &kp AT        &kp HASH      &kp DOLLAR  &kp PRCNT     &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
+&none          &kp CARET  &kp AMPS  &kp STAR  &none      &none           &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
                               &trans        &trans        &trans      &trans           &trans           &trans  &trans  &kp N0
             >;
         };
