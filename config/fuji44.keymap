@@ -119,7 +119,7 @@ lt: layer_tap {
 
         td_ctrl_shift_z: td_ctrl_shift_z {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CS";
+            label = "TD_CS_Z";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LEFT_CONTROL Z>, <&kp LS(LEFT_CONTROL)>;
@@ -128,7 +128,7 @@ lt: layer_tap {
 
         td_ctrl_shift_semi: td_ctrl_shift_semi {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CS";
+            label = "TD_CS_SEMI";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt LSHIFT SEMI>, <&kp LS(LEFT_CONTROL)>;
@@ -161,7 +161,7 @@ lt: layer_tap {
 &kp TAB              &kp Q  &kp W             &kp E          &kp R    &kp T        &kp Y      &kp U      &kp I           &kp O              &kp P     &kp  LEFT_BRACKET
 &mt LSHIFT CAPSLOCK  &mt LSHIFT A  &kp S             &kp D          &kp F    &kp G        &kp H      &kp J      &kp K           &kp L              &td_ctrl_shift_semi  &kp SQT
 &td_ctrl_shift       &td_ctrl_shift_z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
-                            &kp GRAVE  &td_en_num_func   &mt LEFT_CONTROL SPACE    &td_nav   &bspc_del &mt LEFT_GUI SPACE &mt LALT ENTER  &kp RIGHT_BRACKET
+                            &kp GRAVE  &lt NUM ENTER   &mt LEFT_CONTROL SPACE    &td_nav   &bspc_del &mt LEFT_GUI SPACE &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -194,9 +194,9 @@ lt: layer_tap {
 
         fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F7         &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F4         &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &mo BT  &trans  &trans  &trans    &trans  &kp F1         &kp F2  &kp F3  &kp F12  &trans
+&trans       &none &none   &none       &none &none       &none  &kp F7         &kp F8  &kp F9  &kp F10  &trans
+&trans       &none &none   &none       &none &none       &none  &kp F4         &kp F5  &kp F6  &kp F11  &trans
+&trans       &none &none   &none       &none &none       &none &kp F1         &kp F2  &kp F3  &kp F12  &trans
                 &trans  &trans  &trans  &trans    &trans  &kp LG(SPACE)  &trans  &trans
             >;
         };
