@@ -38,7 +38,7 @@ layers:
   - {t: /, h: LEFT CONTROL}
   - {t: ⏎, h: Shift}
   - '`'
-  - {t: ⏎, h: num}
+  - '&td_en_num_func'
   - {t: ␣, h: LEFT CONTROL}
   - '&td_nav'
   - {t: ⌫, s: ⌦}
@@ -173,7 +173,7 @@ layers:
   - KP DOT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,7 +218,7 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -263,7 +263,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Boot
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
