@@ -88,7 +88,6 @@
     };
 
     behaviors {
-
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -155,31 +154,52 @@
             bindings = <&mt LSHIFT SEMI>, <&kp LS(LEFT_CONTROL)>;
         };
 
-        hrm_l: hrm_l {
+        hrm_lb: hrm_lb {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <13 14 25 26>;
+            hold-trigger-key-positions = <13 14 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 40 12 15 16 17 0 1 2 3 4 5 36 37 38 39>;
         };
 
-
-        hrm_r: hrm_r {
+        hrm_rb: hrm_rb {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <21 22 33 34>;
+            hold-trigger-key-positions = <21 22 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 23 18 19 20 6 7 8 9 10 11 40 41 42 43>;
         };
 
         mouse_key_press: mouse_key_press {
             compatible = "zmk,behavior-mouse-key-press";
             label = "MOUSE_KEY_PRESS";
             #binding-cells = <1>;
+        };
+
+        hrm_lm: hrm_lm {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 40 0 1 2 3 4 5 36 37 38 39 24 25 26 27 28 29>;
+            label = "HRM_LM";
+        };
+
+        hrm_rm: hrm_rm {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+
+            label = "HRM_RM";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 30 31 32 33 34 35 40 41 42 43 6 7 8 9 10 11>;
         };
     };
 
@@ -188,19 +208,19 @@
 
         def {
             bindings = <
-&kp TAB               &kp Q               &kp W      &kp E          &kp R                   &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                  &kp LEFT_BRACKET
-&kp LS(LEFT_CONTROL)  &hrm_l LSHIFT A        &kp S      &kp D          &lt FUN F               &kp G      &kp H          &kp J               &kp K         &kp   L         &hrm_r   RSHIFT   SEMI        &kp SQT
-&kp LEFT_CONTROL      &hrm_l LEFT_CONTROL Z  &kp X      &kp C          &kp V                   &kp B      &kp N          &kp M               &kp COMMA       &kp DOT          &hrm_r  RIGHT_CONTROL   FSLH  &mt RSHIFT ENTER
-                                          &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+&kp TAB               &kp Q                   &kp W      &kp E          &kp R                   &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                       &kp LEFT_BRACKET
+&kp LS(LEFT_CONTROL)  &hrm_lm LSHIFT A        &kp S      &kp D          &lt FUN F               &kp G      &kp H          &kp J               &kp K           &kp L              &hrm_rb RSHIFT SEMI         &kp SQT
+&kp LEFT_CONTROL      &hrm_lb LEFT_CONTROL Z  &kp X      &kp C          &kp V                   &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &hrm_rb RIGHT_CONTROL FSLH  &mt RSHIFT ENTER
+                                              &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
         nav {
             bindings = <
-&kp LA(TAB)  &kp LC(Q)  &kp LC(W)        &kp LC(E)  &kp LC(R)  &kp LC(T)        &kp LC(Y)  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &trans
-&kp LEFT_CONTROL       &kp LSHIFT  &kp LC(S)        &kp LC(D)  &kp LC(F)  &kp LC(G)        &trans     &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &trans
-&trans       &kp LEFT_CONTROL  &kp LC(X)        &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))    &trans     &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &trans  &trans
-                        &kp PRINTSCREEN  &trans     &trans     &trans           &trans     &trans           &trans         &tog NAV
+&kp LA(TAB)       &kp LC(Q)         &kp LC(W)        &kp LC(E)  &kp LC(R)  &kp LC(T)        &kp LC(Y)  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &trans  &trans
+&kp LEFT_CONTROL  &kp LSHIFT        &kp LC(S)        &kp LC(D)  &kp LC(F)  &kp LC(G)        &trans     &kp LEFT         &kp DOWN       &kp RIGHT    &trans  &trans
+&trans            &kp LEFT_CONTROL  &kp LC(X)        &kp LC(C)  &kp LC(V)  &kp LS(LC(Z))    &trans     &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &trans  &trans
+                                    &kp PRINTSCREEN  &trans     &trans     &trans           &trans     &trans           &trans         &tog NAV
             >;
         };
 
@@ -224,9 +244,9 @@
 
         fun {
             bindings = <
-&trans  &none             &none   &none   &none          &none     &none    &kp F7         &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp LSHIFT        &none   &none   &none          &none     &none    &kp F4         &kp F5  &kp F6  &kp F11  &trans
-&trans  &kp LEFT_CONTROL  &mo BT  &none   &none          &none     &none    &kp F1         &kp F2  &kp F3  &kp F12  &trans
+&trans  &none             &none   &none   &none          &none      &none    &kp F7         &kp F8  &kp F9  &kp F10  &trans
+&trans  &kp LSHIFT        &none   &none   &none          &none      &none    &kp F4         &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp LEFT_CONTROL  &mo BT  &none   &none          &none      &none    &kp F1         &kp F2  &kp F3  &kp F12  &trans
                           &none   &trans  &kp BACKSPACE  &kp DEL    &kp DEL  &kp LG(SPACE)  &trans  &none
             >;
         };
