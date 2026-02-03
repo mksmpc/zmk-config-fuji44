@@ -25,7 +25,7 @@ layers:
   - L
   - '&td_ctrl_shift_semi'
   - ''''
-  - '&td_ctrl_shift'
+  - LEFT CONTROL
   - '&td_ctrl_shift_z'
   - X
   - C
