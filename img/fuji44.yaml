@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - ']'
+  - '['
   - {t: CAPSLOCK, h: LSHIFT}
   - A
   - S
@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - {t: ⏎, h: Shift}
-  - '['
+  - '`'
   - {t: ⏎, h: num}
   - '&td_nav'
   - {t: ␣, s: ␣}
@@ -133,7 +133,7 @@ layers:
   - {t: ▽, type: trans}
   - Left Click
   - Right Click
-  - Alt+⏎
+  - {t: ▽, type: trans}
   - {t: m_nav, h: toggle}
   num:
   - '`'
@@ -148,7 +148,7 @@ layers:
   - '9'
   - KP PLUS
   - \
-  - '~'
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -160,7 +160,7 @@ layers:
   - '6'
   - KP MINUS
   - {t: ▽, type: trans}
-  - ''
+  - {t: ▽, type: trans}
   - ^
   - '&'
   - '*'
