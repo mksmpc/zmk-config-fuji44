@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - Sft+LEFT CONTROL
+  - Shift
   - {t: A, h: LSHIFT}
   - S
   - D
@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: RIGHT CONTROL}
+  - {t: /, h: Ctrl}
   - {t: ⏎, h: Shift}
   - '`'
   - {t: ⏎, h: num}
@@ -149,7 +149,7 @@ layers:
   - '='
   - \
   - {t: ▽, type: trans}
-  - '!'
+  - {t: '!', h: Shift}
   - '@'
   - '#'
   - $
@@ -158,10 +158,10 @@ layers:
   - '4'
   - '5'
   - '6'
-  - /
+  - {t: /, h: Shift}
   - ''
   - {t: ▽, type: trans}
-  - ^
+  - {t: ^, h: Ctrl}
   - '&'
   - fun
   - ''
@@ -170,7 +170,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - KP DOT
+  - {t: KP DOT, h: Ctrl}
   - ''
   - ''
   - {type: held}
