@@ -41,8 +41,8 @@ layers:
   - {t: ⏎, h: num}
   - '&td_nav'
   - {t: ␣, s: ␣}
-  - ␣
   - {t: ⌫, s: ⌫}
+  - {t: ␣, h: LEFT GUI}
   - {t: ⏎, h: Alt}
   - ']'
   nav:
