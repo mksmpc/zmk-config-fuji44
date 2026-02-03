@@ -17,7 +17,7 @@ layers:
   - {t: A, h: LSHIFT}
   - S
   - D
-  - F
+  - {t: F, h: fun}
   - G
   - H
   - J
@@ -197,7 +197,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - F4
@@ -207,8 +207,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+  - bluetooth
   - ''
-  - {type: held}
   - ''
   - ''
   - ''
@@ -218,7 +218,7 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -226,49 +226,49 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bluetooth:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - BT 0
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
   - Out USB
   - Out BLE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - BT CLR ALL
   - Reset
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
   - BT PRV
   - BT NXT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - Boot
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - Boot
 combos:
 - p: [1, 2]
