@@ -74,36 +74,21 @@
     };
 
     behaviors {
-        cs_spc_bspc: cs_morph_ctrl {
+
+        spc_grave: spc_grave {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp BACKSPACE>;
-
-            mods = <(MOD_LSFT)>;
-        };
-
-        spc_bspc: spc_bspc {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&cs_spc_bspc>;
+            bindings = <&kp GRAVE>, <&kp BACKSPACE>;
 
             mods = <(MOD_LCTL)>;
-        };
-
-        cs_bspc_del: cs_bspc_del {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DEL>;
-
-            mods = <(MOD_LSFT)>;
         };
 
         bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&cs_bspc_del>;
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
 
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LSFT)>;
         };
 
         td_nav: td_nav_mnav {
@@ -122,12 +107,21 @@
             bindings = <&lt NUM ENTER>, <&mo FUN>;
         };
 
-        td_ctrl_shift: td_ctrl_shift {
+        td_ctrl_shift_z: td_ctrl_shift_z {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CS";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LEFT_CONTROL>, <&kp LS(LEFT_CONTROL)>;
+            bindings = <&mt LEFT_CONTROL Z>, <&kp LS(LEFT_CONTROL)>;
+        };
+
+
+        td_ctrl_shift_semi: td_ctrl_shift_semi {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHIFT SEMI>, <&kp LS(LEFT_CONTROL)>;
         };
 
         hrm: hrm {
@@ -147,15 +141,17 @@
         };
     };
 
+
+
     keymap {
         compatible = "zmk,keymap";
 
         def {
             bindings = <
 &kp TAB              &kp Q  &kp W             &kp E          &kp R    &kp T        &kp Y      &kp U      &kp I           &kp O              &kp P     &kp  LEFT_BRACKET
-&mt LSHIFT CAPSLOCK  &kp A  &kp S             &kp D          &kp F    &kp G        &kp H      &kp J      &kp K           &kp L              &kp SEMI  &kp SQT
-&td_ctrl_shift       &kp Z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &kp FSLH  &mt LSHFT ENTER
-                            &kp GRAVE  &lt NUM ENTER   &spc_bspc    &td_nav   &bspc_del &mt LEFT_GUI SPACE &mt LALT ENTER  &kp RIGHT_BRACKET
+&mt LSHIFT CAPSLOCK  &mt LSHIFT A  &kp S             &kp D          &kp F    &kp G        &kp H      &kp J      &kp K           &kp L              &td_ctrl_shift_semi  &kp SQT
+&td_ctrl_shift       &td_ctrl_shift_z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
+                            &kp GRAVE  &lt NUM ENTER   &mt LEFT_CONTROL SPACE    &td_nav   &bspc_del &mt LEFT_GUI SPACE &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
