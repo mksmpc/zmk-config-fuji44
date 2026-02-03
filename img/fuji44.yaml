@@ -253,12 +253,12 @@ layers:
   - Reset
   - ''
   - {type: held}
-  - ''
+  - T
   - ''
   - ''
   - BT PRV
   - BT NXT
-  - ''
+  - T
   - ''
   - ''
   - ''
