@@ -50,7 +50,7 @@
     behaviors {
         cs_spc_bspc: cs_morph_ctrl {
             compatible = "zmk,behavior-mod-morph";
-            binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp BACKSPACE>;
             mods = <(MOD_LCTL)>;
         };
@@ -64,7 +64,7 @@
 
         cs_bspc_del: cs_bspc_del {
             compatible = "zmk,behavior-mod-morph";
-            binding-cells = <2>;
+            #binding-cells = <0>;
             bindings = <&kp SPACE>, <&kp DEL>;
             mods = <(MOD_LCTL)>;
         };
@@ -148,10 +148,10 @@
 
         num {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5    &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp N0        &trans
-&trans            &trans        &trans            &trans        &trans      &trans    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK  &trans
-&trans            &trans                    &trans  &mo FUN      &trans  &trans    &kp MINUS  &kp N1  &kp N2  &kp N3  &kp SLASH     &trans
-                             &trans            &trans        &trans             &trans    &kp LG(SPACE)     &trans  &trans  &tog 3
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                                   &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp MINUS         &trans
+&trans            &trans        &trans            &trans        &trans      &trans    &kp ASTERISK   &kp N4  &kp N5  &kp N6  &kp  PLUS  &trans
+&trans            &trans                    &trans  &mo FUN      &trans  &trans       &kp  SLASH &kp N1  &kp N2  &kp N3  &kp    N0  &trans
+                             &trans            &trans        &trans             &trans         &trans  &trans  &trans &kp N0
             >;
         };
 
@@ -160,7 +160,7 @@
 &trans  &trans  &trans           &trans  &trans          &trans             &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans           &trans  &trans          &trans            &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
 &trans    &trans    &mo BT       &trans  &trans          &trans     &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                &trans           &trans  &trans          &trans            &trans  &trans  &trans  &trans
+                &trans           &trans  &trans          &trans            &trans  &kp LG(SPACE)  &trans  &trans
             >;
         };
 
