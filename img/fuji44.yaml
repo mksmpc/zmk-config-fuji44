@@ -23,7 +23,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: LSHIFT}
+  - {t: ;, h: Shift}
   - ''''
   - LEFT CONTROL
   - {t: Z, h: LEFT CONTROL}
@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - {t: /, h: LEFT CONTROL}
+  - {t: /, h: RIGHT CONTROL}
   - {t: ⏎, h: Shift}
   - '`'
   - {t: ⏎, h: num}
@@ -58,8 +58,8 @@ layers:
   - Tab →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Select All
+  - LEFT CONTROL
+  - LSHIFT
   - Ctl+S
   - Ctl+D
   - Ctl+F
@@ -71,7 +71,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Undo
+  - LEFT CONTROL
   - Cut
   - Copy
   - Ctl+V
@@ -159,7 +159,7 @@ layers:
   - '5'
   - '6'
   - /
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - ^
   - '&'
@@ -171,7 +171,7 @@ layers:
   - '2'
   - '3'
   - KP DOT
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - {type: held}
   - {t: ▽, type: trans}
@@ -220,7 +220,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ⌫
-  - {t: ▽, type: trans}
+  - ⌦
   - ⌦
   - Gui+␣
   - {t: ▽, type: trans}
