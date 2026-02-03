@@ -68,7 +68,7 @@
             bindings = <&kp SPACE>, <&kp DEL>;
             mods = <(MOD_LCTL)>;
         };
-        bspc_del: spc_bspc {
+        bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&cs_bspc_del>;
