@@ -163,7 +163,7 @@ layers:
   - {t: ▽, type: trans}
   - ^
   - '&'
-  - '*'
+  - fun
   - ''
   - ''
   - '='
@@ -208,7 +208,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - bluetooth
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,7 +218,7 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,7 +253,7 @@ layers:
   - Reset
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT PRV
@@ -263,7 +263,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Boot
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&studio_unlock'
