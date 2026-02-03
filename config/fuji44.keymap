@@ -45,6 +45,32 @@
             timeout-ms = <25>;
             layers = <0 3>;
         };
+
+        s_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <28 27>;
+            layers = <0 3>;
+            timeout-ms = <25>;
+        };
+
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <28 27 26>;
+            timeout-ms = <25>;
+            layers = <0 3>;
+        };
+
+        l_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <15 16 14>;
+            layers = <0 3>;
+        };
+
+        r_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <19 20 21>;
+            layers = <0 3>;
+        };
     };
 
     behaviors {
@@ -153,10 +179,10 @@
 
         num {
             bindings = <
-&kp GRAVE      &kp N1         &kp N2        &kp N3        &kp N4      &kp N5           &kp KP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &kp BSLH
-&kp TILDE  &kp EXCL       &kp AT        &kp HASH      &kp DOLLAR  &kp PRCNT     &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
-&none          &kp CARET  &kp AMPS  &kp STAR  &none      &none           &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
-                              &trans        &trans        &trans      &trans           &trans           &trans  &trans  &kp N0
+&kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4      &kp N5       &kp KP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &kp BSLH
+&kp TILDE  &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
+&none      &kp CARET  &kp AMPS  &kp STAR  &none       &none        &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
+                      &trans    &trans    &trans      &trans       &trans           &trans  &trans  &kp N0
             >;
         };
 
