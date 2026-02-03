@@ -168,7 +168,7 @@
             bindings = <
 &kp TAB              &kp Q  &kp W             &kp E          &kp R    &kp T        &kp Y      &kp U      &kp I           &kp O              &kp P     &kp  LEFT_BRACKET
 &mt LSHIFT CAPSLOCK  &mt LSHIFT A  &kp S             &kp D          &kp F    &kp G        &kp H      &kp J      &kp K           &kp L              &td_ctrl_shift_semi  &kp SQT
-&td_ctrl_shift       &td_ctrl_shift_z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
+&kp LEFT_CONTROL       &td_ctrl_shift_z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &mt LEFT_CONTROL FSLH  &mt LSHFT ENTER
                             &grave_bckspc  &lt NUM ENTER   &mt LEFT_CONTROL SPACE    &td_nav   &bspc_del &mt LEFT_GUI SPACE &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
