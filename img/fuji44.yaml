@@ -39,9 +39,9 @@ layers:
   - {t: ⏎, h: Shift}
   - '['
   - '&td_en_num_func'
-  - {t: ␣, s: ⌫}
+  - ␣
   - '&td_nav'
-  - {t: ⌫, s: ⌦}
+  - ␣
   - ␣
   - {t: ⏎, h: Alt}
   - ']'
