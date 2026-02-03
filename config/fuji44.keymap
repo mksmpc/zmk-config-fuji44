@@ -152,10 +152,10 @@
 
         def {
             bindings = <
-&kp TAB              &kp Q  &kp W             &kp E          &kp R    &kp T        &kp Y      &kp U      &kp I           &kp O              &kp P     &kp RBKT
+&kp TAB              &kp Q  &kp W             &kp E          &kp R    &kp T        &kp Y      &kp U      &kp I           &kp O              &kp P     &kp  LEFT_BRACKET
 &mt LSHIFT CAPSLOCK  &kp A  &kp S             &kp D          &kp F    &kp G        &kp H      &kp J      &kp K           &kp L              &kp SEMI  &kp SQT
 &td_ctrl_shift       &kp Z  &kp X             &kp C          &kp V    &kp B        &kp N      &kp M      &kp COMMA       &kp DOT            &kp FSLH  &mt LSHFT ENTER
-                            &kp LEFT_BRACKET  &lt NUM ENTER  &td_nav  &spc_bspc    &kp SPACE  &bspc_del  &mt LALT ENTER  &kp RIGHT_BRACKET
+                            &kp GRAVE  &lt NUM ENTER  &td_nav  &spc_bspc    &kp SPACE  &bspc_del  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
@@ -173,15 +173,15 @@
 &trans  &trans            &trans            &kp LG(E)         &kp LG(T)         &trans              &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &trans  &kp BACKSPACE
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp DELETE
 &trans  &trans            &trans            &trans            &trans            &trans              &trans          &trans          &trans          &trans           &trans  &trans
-                          &trans            &trans            &trans            &trans              &mkp LCLK       &mkp RCLK       &kp LA(ENTER)   &tog MNAV
+                          &trans            &trans            &trans            &trans              &mkp LCLK       &mkp RCLK       &trans   &tog MNAV
             >;
         };
 
         num {
             bindings = <
 &kp GRAVE  &kp N1     &kp N2    &kp N3    &kp N4      &kp N5       &kp KP_ASTERISK  &kp N7  &kp N8  &kp N9  &kp KP_PLUS   &kp BSLH
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
-&none      &kp CARET  &kp AMPS  &kp STAR  &none       &none        &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
+&trans  &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT    &kp FSLH         &kp N4  &kp N5  &kp N6  &kp KP_MINUS  &trans
+& trans     &kp CARET  &kp AMPS  &kp STAR  &none       &none        &kp EQUAL        &kp N1  &kp N2  &kp N3  &kp KP_DOT    &trans
                       &trans    &trans    &trans      &trans       &trans           &trans  &trans  &kp N0
             >;
         };
