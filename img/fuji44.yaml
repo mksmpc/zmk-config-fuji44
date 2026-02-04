@@ -38,11 +38,11 @@ layers:
   - {t: /, h: Ctrl}
   - {t: ⏎, h: Shift}
   - '`'
-  - {t: ⏎, h: num}
+  - {t: ⏎, h: LEFT GUI}
   - {t: ␣, h: LEFT CONTROL}
   - '&td_nav'
   - ⌫
-  - {t: ␣, h: LEFT GUI}
+  - {t: ␣, h: num}
   - {t: ⏎, h: Alt}
   - ']'
   nav:
@@ -173,11 +173,11 @@ layers:
   - {t: KP DOT, h: Ctrl}
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   fun:
