@@ -11,7 +11,7 @@
 #define NUM   3
 #define FUN   4
 #define BT   5
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // default: 600
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
