@@ -91,12 +91,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   nav:
-  - Alt+↹
-  - Ctl+Q
-  - Ctl+W
-  - Ctl+E
-  - Ctl+R
-  - Ctl+T
+  - {t: ▽, type: trans}
+  - ''
+  - Ctl+←
+  - ↑
+  - Ctl+→
+  - ''
   - ''
   - Sft+Ctl+↹
   - ↑
@@ -104,11 +104,11 @@ layers:
   - Home
   - Page ↑
   - {t: ▽, type: trans}
-  - LSHIFT
-  - Ctl+S
-  - Ctl+D
-  - Ctl+F
-  - Ctl+G
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
   - ''
   - ←
   - ↓
@@ -116,11 +116,11 @@ layers:
   - End
   - Page ↓
   - {t: ▽, type: trans}
-  - LEFT CONTROL
-  - Cut
-  - Copy
-  - Ctl+V
-  - Sft+Ctl+Z
+  - Sft+Home
+  - Sft+←
+  - ''
+  - Sft+→
+  - Sft+End
   - ''
   - Sft+Gui+↹
   - Gui+`
