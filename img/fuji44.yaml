@@ -122,9 +122,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - Back Click
+  - Middle Click
+  - Forward Click
   - ''
   - ''
   - ''
@@ -132,8 +132,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Left Click
+  - Left Click
   - Right Click
-  - Middle Click
   - {t: m_nav, h: toggle}
   num:
   - '0'
@@ -164,7 +164,7 @@ layers:
   - {t: ^, h: Ctrl}
   - '&'
   - '*'
-  - \
+  - '-'
   - _
   - KP ASTERISK
   - '1'
@@ -172,7 +172,7 @@ layers:
   - '3'
   - {t: KP 0, h: Ctrl}
   - ''
-  - ''
+  - \
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
