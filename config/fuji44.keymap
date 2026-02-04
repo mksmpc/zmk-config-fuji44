@@ -12,7 +12,6 @@
 #define NUM   4
 #define FUN   5
 #define BT   6
-
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // default: 600
 
 #include <behaviors.dtsi>
@@ -244,10 +243,10 @@
 
         ru_symbols {
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp CARET  &kp AMPS  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp LS(AT)  &kp LS(AMPS)  &kp MINUS  &kp LS(CARET)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans      &trans        &trans     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans      &trans        &trans     &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans      &trans        &trans     &trans           &trans  &trans  &trans  &trans
             >;
         };
 
