@@ -116,11 +116,11 @@ layers:
   - End
   - Page ↓
   - {t: ▽, type: trans}
-  - Sft+Home
   - Sft+←
+  - Sft+Ctl+←
   - ''
+  - Sft+Ctl+→
   - Sft+→
-  - Sft+End
   - ''
   - Sft+Gui+↹
   - Gui+`
