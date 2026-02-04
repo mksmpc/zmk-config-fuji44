@@ -48,10 +48,10 @@ layers:
   ru_symbols:
   - {t: ▽, type: trans}
   - '!'
-  - '@'
-  - ^
-  - '&'
+  - Sft+@
+  - Sft+&
   - '-'
+  - Sft+^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
