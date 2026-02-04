@@ -2,7 +2,7 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- * Config By Noidor13: https://github.com/Serk70/zmk-config-fuji44/blob/main/config/fuji44.keymap
+ * Config based on By Noidor13: https://github.com/Serk70/zmk-config-fuji44/blob/main/config/fuji44.keymap
  */
 
 #define DEF 0
