@@ -6,11 +6,13 @@
  */
 
 #define DEF 0
-#define NAV   1
-#define MNAV   2
-#define NUM   3
-#define FUN   4
-#define BT   5
+#define RU_S   1
+#define NAV   2
+#define MNAV   3
+#define NUM   4
+#define FUN   5
+#define BT   6
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1800  // default: 600
 
 #include <behaviors.dtsi>
@@ -206,7 +208,7 @@
         lt_letter: lt_letter {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
 
@@ -218,7 +220,7 @@
         lt_ru_symbols: lt_ru_symbols {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
 
@@ -242,7 +244,7 @@
 
         ru_symbols {
             bindings = <
-&trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(CARET)  &kp LS(AMPS)  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp AT  &kp CARET  &kp AMPS  &kp MINUS    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans  &trans  &trans
                       &trans      &trans         &trans        &trans       &trans  &trans  &trans  &trans
