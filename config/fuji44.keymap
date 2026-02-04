@@ -208,10 +208,10 @@
 
         def {
             bindings = <
-&kp TAB           &kp Q                   &kp W      &kp E          &kp R                   &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                    &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &hrm_lm LSHIFT A        &kp S      &kp D          &lt FUN F               &kp G      &kp H          &kp J               &kp K           &kp L              &hrm_rm LEFT_SHIFT SEMI  &kp SQT
-&kp LEFT_CONTROL  &hrm_lb LEFT_CONTROL Z  &kp X      &kp C          &kp V                   &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &hrm_rb LCTRL FSLH       &mt RSHIFT ENTER
-                                          &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+&kp TAB                  &kp Q                   &kp W      &kp E          &kp R                   &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                    &kp LEFT_BRACKET
+&mt LEFT_SHIFT CAPSLOCK  &hrm_lm LSHIFT A        &kp S      &kp D          &lt FUN F               &kp G      &kp H          &kp J               &kp K           &kp L              &hrm_rm LEFT_SHIFT SEMI  &kp SQT
+&kp LEFT_CONTROL         &hrm_lb LEFT_CONTROL Z  &kp X      &kp C          &kp V                   &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &hrm_rb LCTRL FSLH       &mt RSHIFT ENTER
+                                                 &kp GRAVE  &lt NUM ENTER  &mt LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
