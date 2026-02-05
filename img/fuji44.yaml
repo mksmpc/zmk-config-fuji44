@@ -101,7 +101,7 @@ layers:
   - Sft+Ctl+↹
   - ↑
   - Tab →
-  - ''
+  - Alt+↹
   - ''
   - {t: ▽, type: trans}
   - Home
@@ -109,24 +109,24 @@ layers:
   - ↓
   - →
   - End
-  - ''
+  - Page ↑
   - ←
   - ↓
   - →
-  - Page ↑
   - Home
+  - ''
   - {t: ▽, type: trans}
   - Ctl+Sft+Z
   - {t: Sft+Ctl+←, h: Sft+Home}
   - Shift
   - {t: Sft+Ctl+→, h: Sft+End}
   - ''
-  - ''
+  - Page ↓
   - Sft+Gui+↹
   - Gui+`
   - Gui+↹
-  - Page ↓
   - End
+  - ''
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
