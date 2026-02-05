@@ -142,7 +142,7 @@ layers:
   - Gui+E
   - Gui+T
   - ''
-  - Scroll ↑
+  - ''
   - Scroll ←
   - Mouse ↑
   - Scroll →
@@ -154,7 +154,7 @@ layers:
   - Gui+3
   - Gui+4
   - Gui+5
-  - Scroll ↓
+  - Scroll ↑
   - Mouse ←
   - Mouse ↓
   - Mouse →
@@ -166,7 +166,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Scroll ↓
   - Back Click
   - Middle Click
   - Forward Click
@@ -262,7 +262,7 @@ layers:
   - F3
   - F10
   - ''
-  - SLEEP
+  - SLEEP MODE
   - {t: ▽, type: trans}
   - ⌫
   - ⌦
