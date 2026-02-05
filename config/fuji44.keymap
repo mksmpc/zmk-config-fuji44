@@ -293,7 +293,7 @@
 &kp N0                 &kp N1                     &kp N2         &kp N3        &kp N4      &kp N5            &kp KP_PLUS      &kp N7  &kp N8  &kp N9      &kp EQUAL                    &kp BSLH
 &kp LEFT_PARENTHESIS   &hrm_lm LSHFT EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR  &kp PRCNT         &kp KP_MINUS     &kp N4  &kp N5  &kp N6      &hrm_rm LEFT_SHIFT KP_SLASH  &none
 &kp RIGHT_PARENTHESIS  &hrm_lb LCTRL CARET        &kp AMPS       &kp ASTERISK  &kp MINUS   &kp UNDERSCORE    &kp KP_ASTERISK  &kp N1  &kp N2  &kp N3      &hrm_rb LCTRL KP_NUMBER_0    &none
-                                                  &kp BACKSLASH  &none         &none       &none             &trans           &trans  &trans  &kp KP_DOT
+                                                  &kp BACKSLASH  &none         &none       &none             &trans           &kp KP_NUMBER_0  &trans  &kp KP_DOT
             >;
         };
 
