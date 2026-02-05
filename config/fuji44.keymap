@@ -1,4 +1,4 @@
-а/*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -253,7 +253,7 @@
 
         ru_symbols {
             bindings = <
-&trans  &kp EXCL  &kp LS(AMPS)  &kp LS(AT)  &kp MINUS  &kp LS(CARET)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCL  &kp AMPS  &kp AT  &kp MINUS  &kp CARET    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans        &trans      &trans     &trans           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans        &trans      &trans     &trans           &trans  &trans  &trans  &trans  &trans  &trans
                   &trans        &trans      &trans     &trans           &trans  &trans  &trans  &trans
