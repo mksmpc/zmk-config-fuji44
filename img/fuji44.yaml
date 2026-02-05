@@ -25,7 +25,7 @@ layers:
   - L
   - {t: ;, h: Shift}
   - ''''
-  - LEFT CONTROL
+  - {t: LEFT CONTROL, s: Sft+Ctl+Z}
   - {t: Z, h: LEFT CONTROL}
   - X
   - C
@@ -101,32 +101,32 @@ layers:
   - Sft+Ctl+↹
   - ↑
   - Tab →
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - ''
+  - ←
+  - ↓
+  - →
   - Home
   - Page ↑
   - {t: ▽, type: trans}
-  - Home
-  - ←
-  - ↓
-  - →
-  - End
+  - Ctl+Sft+Z
+  - {t: Sft+Ctl+←, h: Sft+Home}
+  - Shift
+  - {t: Sft+Ctl+→, h: Sft+End}
   - ''
-  - ←
-  - ↓
-  - →
-  - End
-  - Page ↓
-  - {t: ▽, type: trans}
-  - Sft+←
-  - Sft+Ctl+←
-  - ''
-  - Sft+Ctl+→
-  - Sft+→
   - ''
   - Sft+Gui+↹
   - Gui+`
   - Gui+↹
-  - ''
-  - ''
+  - End
+  - Page ↓
   - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
