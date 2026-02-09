@@ -97,7 +97,7 @@ layers:
   - ↑
   - Ctl+→
   - ''
-  - ''
+  - Page ↑
   - Sft+Ctl+↹
   - ↑
   - Tab →
@@ -109,7 +109,7 @@ layers:
   - ↓
   - →
   - End
-  - Page ↑
+  - Page ↓
   - ←
   - ↓
   - →
@@ -121,7 +121,7 @@ layers:
   - Shift
   - {t: Sft+Ctl+→, h: Sft+End}
   - ''
-  - Page ↓
+  - ''
   - Sft+Gui+↹
   - Gui+`
   - Gui+↹
