@@ -245,6 +245,7 @@ layers:
   - {type: held}
   - ''
   - VOLUME DOWN
+  - F4
   - F5
   - F6
   - F11
@@ -257,7 +258,6 @@ layers:
   - ''
   - MUTE
   - F1
-  - F4
   - F2
   - F3
   - F10
@@ -296,8 +296,8 @@ layers:
   - ''
   - BT CLR ALL
   - Reset
-  - {type: held}
   - ''
+  - {type: held}
   - T
   - ''
   - ''
