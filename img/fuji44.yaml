@@ -59,7 +59,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Shift
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,22 +139,22 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - Gui+E
-  - Gui+T
   - ''
   - ''
+  - ''
+  - Scroll ↑
   - Scroll ←
   - Mouse ↑
   - Scroll →
   - ''
   - ⌫
   - {t: ▽, type: trans}
-  - Gui+1
-  - Gui+2
-  - Gui+3
-  - Gui+4
-  - Gui+5
-  - Scroll ↑
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ↓
   - Mouse ←
   - Mouse ↓
   - Mouse →
@@ -166,7 +166,7 @@ layers:
   - ''
   - ''
   - ''
-  - Scroll ↓
+  - ''
   - Back Click
   - Middle Click
   - Forward Click
@@ -232,7 +232,7 @@ layers:
   - ''
   - ''
   - ''
-  - MUTE
+  - VOLUME UP
   - F7
   - F8
   - F9
@@ -244,8 +244,7 @@ layers:
   - ''
   - {type: held}
   - ''
-  - VOLUME UP
-  - F4
+  - VOLUME DOWN
   - F5
   - F6
   - F11
@@ -256,8 +255,9 @@ layers:
   - ''
   - ''
   - ''
-  - VOLUME DOWN
+  - MUTE
   - F1
+  - F4
   - F2
   - F3
   - F10
@@ -296,8 +296,8 @@ layers:
   - ''
   - BT CLR ALL
   - Reset
-  - ''
   - {type: held}
+  - ''
   - T
   - ''
   - ''
