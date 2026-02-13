@@ -1,8 +1,7 @@
 
 [![Build ZMK firmware](https://github.com/mksmpc/zmk-config-fuji44/actions/workflows/build.yml/badge.svg)](https://github.com/mksmpc/zmk-config-fuji44/actions/workflows/build.yml) [![Draw keymap](https://github.com/mksmpc/zmk-config-fuji44/actions/workflows/draw-keymaps.yml/badge.svg)](https://github.com/mksmpc/zmk-config-fuji44/actions/workflows/draw-keymaps.yml)
 
-
-# [fuji44.keymap](https://github.com/mksmpc/zmk-config-fuji44/blob/main/config/fuji44.keymap)
+# [fuji44.keymap](https://github.com/mksmpc/zmk-config-fuji44/edit/main/config/fuji44.keymap)
 # [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
 
 --- 
