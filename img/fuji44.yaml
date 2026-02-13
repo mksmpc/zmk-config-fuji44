@@ -113,7 +113,7 @@ layers:
   - ←
   - ↓
   - →
-  - Home
+  - {t: Home, h: Shift}
   - ''
   - {t: ▽, type: trans}
   - Ctl+Sft+Z
@@ -125,7 +125,7 @@ layers:
   - Sft+Gui+↹
   - Gui+`
   - Gui+↹
-  - End
+  - {t: End, h: LEFT CONTROL}
   - ''
   - PRINTSCREEN
   - {t: ▽, type: trans}
@@ -147,9 +147,9 @@ layers:
   - Mouse ↑
   - Scroll →
   - ''
-  - ⌫
-  - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
+  - Shift
   - ''
   - ''
   - ''
@@ -158,10 +158,10 @@ layers:
   - Mouse ←
   - Mouse ↓
   - Mouse →
+  - Shift
   - ''
-  - DELETE
   - {t: ▽, type: trans}
-  - ''
+  - LEFT CONTROL
   - ''
   - ''
   - ''
@@ -170,7 +170,7 @@ layers:
   - Back Click
   - Middle Click
   - Forward Click
-  - ''
+  - LEFT CONTROL
   - ''
   - ''
   - {t: ▽, type: trans}
