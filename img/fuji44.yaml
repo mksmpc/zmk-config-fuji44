@@ -104,7 +104,7 @@ layers:
   - Alt+↹
   - ''
   - {t: ▽, type: trans}
-  - Home
+  - {t: Shift, h: Home}
   - ←
   - ↓
   - →
@@ -116,7 +116,7 @@ layers:
   - {t: Home, h: Shift}
   - ''
   - {t: ▽, type: trans}
-  - Ctl+Sft+Z
+  - Ctrl
   - {t: Sft+Ctl+←, h: Sft+Home}
   - Shift
   - {t: Sft+Ctl+→, h: Sft+End}
