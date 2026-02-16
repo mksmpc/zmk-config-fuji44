@@ -104,7 +104,7 @@ layers:
   - Alt+↹
   - ''
   - {t: ▽, type: trans}
-  - {t: Shift, h: Home}
+  - {t: Home, h: Shift}
   - ←
   - ↓
   - →
