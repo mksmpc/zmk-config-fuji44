@@ -273,7 +273,7 @@
         nav {
             bindings = <
 &trans  &none           &kp LC(LEFT)               &kp UP          &kp LC(RIGHT)              &none      &kp PG_UP  &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)           &none
-&trans  &mt HOME LSHFT  &kp LEFT                   &kp DOWN        &kp RIGHT                  &kp END    &kp PG_DN  &kp LEFT         &kp DOWN       &kp RIGHT    &mt LEFT_SHIFT HOME   &none
+&trans  &mt LSHFT HOME   &kp LEFT                   &kp DOWN        &kp RIGHT                  &kp END    &kp PG_DN  &kp LEFT         &kp DOWN       &kp RIGHT    &mt LEFT_SHIFT HOME   &none
 &trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))  &kp LEFT_SHIFT  &mt LS(END) LS(LC(RIGHT))  &none      &none      &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &mt LEFT_CONTROL END  &none
                         &kp PRINTSCREEN            &trans          &trans                     &trans     &trans     &trans           &trans         &tog 2
             >;
