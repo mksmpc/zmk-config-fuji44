@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: Shift}
   - ''''
   - {t: LEFT CONTROL, s: Sft+Ctl+Z}
-  - {t: Z, h: LEFT CONTROL}
+  - {t: Z, h: LEFT CONTROL, s: Z}
   - X
   - C
   - V
