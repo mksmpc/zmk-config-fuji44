@@ -194,7 +194,7 @@ layers:
   - F12
   - ''
   - {t: ▽, type: trans}
-  - LSHIFT
+  - {t: LSHIFT, h: sticky}
   - ''
   - ''
   - {type: held}
@@ -206,7 +206,7 @@ layers:
   - F11
   - ''
   - {t: ▽, type: trans}
-  - LEFT CONTROL
+  - {t: LEFT CONTROL, h: sticky}
   - bluetooth
   - ''
   - ''
