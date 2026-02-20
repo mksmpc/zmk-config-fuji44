@@ -272,7 +272,7 @@
         continious_z: continious_z {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&hrm_lb LEFT_CONTROL Z>, <&kp Z>;
+            bindings = <&hrm_lb LEFT_CONTROL Z>, <&kp LC(Z)>;
 
             mods = <(MOD_LCTL)>;
             label = "CONTINIOUS_Z";
