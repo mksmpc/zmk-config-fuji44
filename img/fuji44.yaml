@@ -38,58 +38,13 @@ layers:
   - {t: /, h: ru_symbols}
   - {t: ⏎, h: Shift}
   - '`'
-  - {t: ⏎, h: num}
+  - {t: ⏎, h: nav}
   - {t: ␣, h: LEFT CONTROL}
-  - '&td_nav'
+  - '&td_num_mnav'
   - ⌫
   - {t: ␣, h: LEFT GUI}
   - {t: ⏎, h: Alt}
   - ']'
-  ru_symbols:
-  - {t: ▽, type: trans}
-  - '!'
-  - '&'
-  - '-'
-  - ^
-  - '@'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+⏎
-  - Ctl+␣
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   nav:
   - {t: ▽, type: trans}
   - ''
@@ -128,13 +83,58 @@ layers:
   - LEFT CONTROL
   - ''
   - PRINTSCREEN
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: nav, h: toggle}
+  num:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - KP PLUS
+  - '7'
+  - '8'
+  - '9'
+  - '='
+  - \
+  - {t: ▽, type: trans}
+  - {t: '6', h: Shift}
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - KP MINUS
+  - '4'
+  - '5'
+  - '6'
+  - {t: KP SLASH, h: Shift}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: Ctl+/, h: Ctrl}
+  - \
+  - '|'
+  - /
+  - _
+  - KP ASTERISK
+  - '1'
+  - '2'
+  - '3'
+  - {t: KP 0, h: Ctrl}
+  - ''
+  - \
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - KP 0
+  - KP DOT
+  - KP DOT
   m_nav:
   - {t: ▽, type: trans}
   - ''
@@ -179,52 +179,7 @@ layers:
   - Left Click
   - Left Click
   - Right Click
-  - {t: m_nav, h: toggle}
-  num:
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - KP PLUS
-  - '7'
-  - '8'
-  - '9'
-  - '='
-  - \
-  - (
-  - {t: '!', h: Shift}
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - KP MINUS
-  - '4'
-  - '5'
-  - '6'
-  - {t: KP SLASH, h: Shift}
-  - ''
-  - )
-  - {t: ^, h: Ctrl}
-  - '&'
-  - '*'
-  - '-'
-  - _
-  - KP ASTERISK
-  - '1'
-  - '2'
-  - '3'
-  - {t: KP 0, h: Ctrl}
-  - ''
-  - \
-  - {type: held}
-  - ''
-  - ''
-  - KP 0
-  - KP 0
-  - KP DOT
-  - KP DOT
+  - {t: fun, h: toggle}
   fun:
   - {t: ▽, type: trans}
   - ''
@@ -269,6 +224,51 @@ layers:
   - ⌦
   - Gui+␣
   - {t: ▽, type: trans}
+  - ''
+  ru_symbols:
+  - ''
+  - '!'
+  - '&'
+  - '-'
+  - ^
+  - '@'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - Ctl+⏎
+  - Ctl+␣
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   bluetooth:
   - ''
@@ -321,25 +321,25 @@ combos:
   draw_separate: true
 - p: [15, 16]
   k: (
-  l: [def, num]
+  l: [def, m_nav]
 - p: [19, 20]
   k: )
-  l: [def, num]
-- p: [20, 21]
+  l: [def, m_nav]
+- p: [32, 33]
   k: _
-  l: [def, num]
+  l: [def, m_nav]
 - p: [21, 22]
   k: ''''
-  l: [def, num]
+  l: [def, m_nav]
 - p: [21, 22, 20]
   k: '"'
-  l: [def, num]
+  l: [def, m_nav]
 - p: [15, 16, 14]
   k: '['
-  l: [def, num]
+  l: [def, m_nav]
 - p: [19, 20, 21]
   k: ']'
-  l: [def, num]
+  l: [def, m_nav]
 - p: [3, 4]
   k: '`'
   l: [def]
@@ -349,8 +349,8 @@ combos:
 - p: [32, 31]
   k: ']'
   l: [def]
-- p: [8, 9]
+- p: [20, 21]
   k: '-'
-  l: [def, num]
-- p: [33, 34]
+  l: [def, m_nav]
+- p: [8, 9]
   k: ^
