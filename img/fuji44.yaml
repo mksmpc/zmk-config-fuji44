@@ -321,25 +321,25 @@ combos:
   draw_separate: true
 - p: [15, 16]
   k: (
-  l: [def, m_nav]
+  l: [def, num]
 - p: [19, 20]
   k: )
-  l: [def, m_nav]
+  l: [def, num]
 - p: [32, 33]
   k: _
-  l: [def, m_nav]
+  l: [def, num]
 - p: [21, 22]
   k: ''''
-  l: [def, m_nav]
+  l: [def, num]
 - p: [21, 22, 20]
   k: '"'
-  l: [def, m_nav]
+  l: [def, num]
 - p: [15, 16, 14]
   k: '['
-  l: [def, m_nav]
+  l: [def, num]
 - p: [19, 20, 21]
   k: ']'
-  l: [def, m_nav]
+  l: [def, num]
 - p: [3, 4]
   k: '`'
   l: [def]
@@ -351,6 +351,6 @@ combos:
   l: [def]
 - p: [20, 21]
   k: '-'
-  l: [def, m_nav]
+  l: [def, num]
 - p: [8, 9]
   k: ^
