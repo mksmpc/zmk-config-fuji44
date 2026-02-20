@@ -274,13 +274,6 @@
             tapping-term-ms = <1000>;
             bindings = <&mo 2>, <&mo 3>;
         };
-
-        shift_nav_caps: shift_nav_caps {
-            compatible = "zmk,behavior-caps-word";
-            label = "SHIFT_NAV_CAPS";
-            #binding-cells = <0>;
-            continue-list = <UP_ARROW RIGHT_ARROW LEFT_ARROW DOWN_ARROW END HOME LCTRL>;
-        };
     };
 
     keymap {
@@ -297,10 +290,10 @@
 
         nav {
             bindings = <
-&trans  &none           &kp LC(LEFT)               &kp UP           &kp LC(RIGHT)              &none      &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)       &none
-&trans  &mt LSHFT HOME  &kp LEFT                   &kp DOWN         &kp RIGHT                  &kp END    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
-&trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))  &shift_nav_caps  &mt LS(END) LS(LC(RIGHT))  &none      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
-                        &tog 1                     &trans           &trans                     &trans     &trans             &trans           &trans         &tog 1
+&trans  &none           &kp LC(LEFT)               &kp UP          &kp LC(RIGHT)              &none      &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)       &none
+&trans  &mt LSHFT HOME  &kp LEFT                   &kp DOWN        &kp RIGHT                  &kp END    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
+&trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))  &kt LEFT_SHIFT  &mt LS(END) LS(LC(RIGHT))  &none      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
+                        &tog 1                     &trans          &trans                     &trans     &trans             &trans           &trans         &tog 1
             >;
         };
 
