@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctrl
   - {t: Sft+Ctl+←, h: Sft+Home}
-  - '&shift_nav_caps'
+  - {t: Shift, h: toggle}
   - {t: Sft+Ctl+→, h: Sft+End}
   - ''
   - ''
