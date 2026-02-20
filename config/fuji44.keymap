@@ -33,26 +33,26 @@
         par_l {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         par_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         undersor {
             bindings = <&kp UNDERSCORE>;
             key-positions = <32 33>;
             timeout-ms = <25>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         s_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <21 22>;
-            layers = <0 3>;
+            layers = <0 2>;
             timeout-ms = <30>;
         };
 
@@ -60,19 +60,19 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <21 22 20>;
             timeout-ms = <30>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         l_brace {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <15 16 14>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         r_brace {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <19 20 21>;
-            layers = <0 3>;
+            layers = <0 2>;
         };
 
         ru_yo {
@@ -99,7 +99,7 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <20 21>;
-            layers = <0 3>;
+            layers = <0 2>;
             timeout-ms = <30>;
         };
 
