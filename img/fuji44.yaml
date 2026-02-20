@@ -73,7 +73,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctrl
   - {t: Sft+Ctl+←, h: Sft+Home}
-  - Shift
+  - '&shift_nav_caps'
   - {t: Sft+Ctl+→, h: Sft+End}
   - ''
   - ''
@@ -82,7 +82,7 @@ layers:
   - Gui+↹
   - LEFT CONTROL
   - ''
-  - PRINTSCREEN
+  - {t: nav, h: toggle}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -217,7 +217,7 @@ layers:
   - F3
   - F10
   - ''
-  - SLEEP
+  - PRINTSCREEN
   - {t: ▽, type: trans}
   - ⌫
   - ⌦
