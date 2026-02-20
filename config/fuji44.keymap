@@ -321,8 +321,8 @@
         fun {
             bindings = <
 &trans  &none             &none            &none   &none          &none      &kp C_VOLUME_UP    &kp F7         &kp F8  &kp F9  &kp F12  &none
-&trans  &kp LSHIFT        &none            &none   &none          &none      &kp C_VOLUME_DOWN  &kp F4         &kp F5  &kp F6  &kp F11  &none
-&trans  &kp LEFT_CONTROL  &mo 6            &none   &none          &none      &kp C_MUTE         &kp F1         &kp F2  &kp F3  &kp F10  &none
+&trans  &sk LSHIFT        &none            &none   &none          &none      &kp C_VOLUME_DOWN  &kp F4         &kp F5  &kp F6  &kp F11  &none
+&trans  &sk LEFT_CONTROL  &mo 6            &none   &none          &none      &kp C_MUTE         &kp F1         &kp F2  &kp F3  &kp F10  &none
                           &kp PRINTSCREEN  &trans  &kp BACKSPACE  &kp DEL    &kp DEL            &kp LG(SPACE)  &trans  &none
             >;
         };
