@@ -53,7 +53,7 @@
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <21 22>;
             layers = <0 2>;
-            timeout-ms = <30>;
+            timeout-ms = <35>;
         };
 
         double_quote {
@@ -91,9 +91,9 @@
 
         ru_hard {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <32 31>;
+            key-positions = <33 34>;
             layers = <0>;
-            require-prior-idle-ms = <30>;
+            require-prior-idle-ms = <35>;
         };
 
         minus {
@@ -106,6 +106,20 @@
         ru_colon {
             bindings = <&kp CARET>;
             key-positions = <8 9>;
+        };
+
+        ru_he_2 {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <35>;
+            layers = <0>;
+        };
+
+        ru_ee {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <7 8>;
+            timeout-ms = <35>;
+            layers = <0 2>;
         };
     };
 
@@ -219,7 +233,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <160>;
             bindings = <&kp>, <&kp>;
 
             label = "HRM_RM";
@@ -284,9 +298,9 @@
 
         def {
             bindings = <
-&kp TAB                  &kp Q             &kp W      &kp E        &kp R                              &kp T           &kp Y          &kp U               &kp I           &kp O              &kp P                    &kp LEFT_BRACKET
-&mt LEFT_SHIFT CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                     &kp G           &kp H          &kp J               &kp K           &kp L              &hrm_rm LEFT_SHIFT SEMI  &kp SQT
-&redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                              &kp B           &kp N          &kp M               &kp COMMA       &kp DOT            &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
+&kp TAB                  &kp Q             &kp W      &kp E        &kp R                              &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                    &kp LEFT_BRACKET
+&mt LEFT_SHIFT CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                     &kp G      &kp H          &kp J               &kp K           &kp L              &hrm_rm LEFT_SHIFT SEMI  &kp SQT
+&redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                              &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
                                            &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
@@ -302,27 +316,27 @@
 
         num {
             bindings = <
-&trans  &kp N1                   &kp N2                &kp N3    &kp N4     &kp N5            &kp KP_PLUS      &kp N7           &kp N8      &kp N9      &kp EQUAL                    &kp BSLH
-&trans  &hrm_lm LEFT_SHIFT N6    &kp N7                &kp N8    &kp N9     &kp N0            &kp KP_MINUS     &kp N4           &kp N5      &kp N6      &hrm_rm LEFT_SHIFT KP_SLASH  &none
+&trans  &kp N1                   &kp N2         &kp N3    &kp N4     &kp N5            &kp KP_PLUS      &kp N7           &kp N8      &kp N9      &kp EQUAL                    &kp BSLH
+&trans  &hrm_lm LEFT_SHIFT N6    &kp N7         &kp N8    &kp N9     &kp N0            &kp KP_MINUS     &kp N4           &kp N5      &kp N6      &hrm_rm LEFT_SHIFT KP_SLASH  &none
 &trans  &hrm_lb LCTRL LC(SLASH)  &kp BACKSLASH  &kp PIPE  &kp SLASH  &kp UNDERSCORE    &kp KP_ASTERISK  &kp N1           &kp N2      &kp N3      &hrm_rb LCTRL KP_NUMBER_0    &none
-                                 &kp    GRAVE      &none     &none      &none             &trans           &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_DOT
+                                 &kp GRAVE      &none     &none      &none             &trans           &kp KP_NUMBER_0  &kp KP_DOT  &kp KP_DOT
             >;
         };
 
         m_nav {
             bindings = <
-&trans  &none             &none  &none   &none   &none     &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none             &none
-&trans  &kp LEFT_SHIFT    &none  &none   &none   &none     &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT    &none
-&trans  &kp LEFT_CONTROL  &none  &none   &none   &none     &none           &mkp MB4        &mkp MCLK       &mkp MB5         &kp LEFT_CONTROL  &none
+&trans  &none             &none  &none  &none  &none    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none             &none
+&trans  &kp LEFT_SHIFT    &none  &none  &none  &none    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT    &none
+&trans  &kp LEFT_CONTROL  &none  &none  &none  &none    &none           &mkp MB4        &mkp MCLK       &mkp MB5         &kp LEFT_CONTROL  &none
                           &none  &none  &none  &none    &mkp LCLK       &mkp LCLK       &mkp RCLK       &tog 4
             >;
         };
 
         fun {
             bindings = <
-&trans  &none             &none            &none   &none          &none      &kp C_VOLUME_UP    &kp F7         &kp F8  &kp F9  &kp F12  &none
-&trans  &sk LSHIFT        &none            &none   &none          &none      &kp C_VOLUME_DOWN  &kp F4         &kp F5  &kp F6  &hrm_rm LEFT_SHIFT  F11  &none
-&trans  &sk LEFT_CONTROL  &mo 6            &none   &none          &none      &kp C_MUTE         &kp F1         &kp F2  &kp F3   &hrm_rb LCTRL F10  &none
+&trans  &none             &none            &none   &none          &none      &kp C_VOLUME_UP    &kp F7         &kp F8  &kp F9  &kp F12                 &none
+&trans  &sk LSHIFT        &none            &none   &none          &none      &kp C_VOLUME_DOWN  &kp F4         &kp F5  &kp F6  &hrm_rm LEFT_SHIFT F11  &none
+&trans  &sk LEFT_CONTROL  &mo 6            &none   &none          &none      &kp C_MUTE         &kp F1         &kp F2  &kp F3  &hrm_rb LCTRL F10       &none
                           &kp PRINTSCREEN  &trans  &kp BACKSPACE  &kp DEL    &kp DEL            &kp LG(SPACE)  &trans  &none
             >;
         };
