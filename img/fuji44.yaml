@@ -47,11 +47,11 @@ layers:
   - ']'
   nav:
   - {t: ▽, type: trans}
-  - ''
-  - Ctl+←
+  - Ctl+Home
+  - ←
   - ↑
-  - Ctl+→
-  - ''
+  - →
+  - Ctl+End
   - {t: PAGE UP, h: Home}
   - Sft+Ctl+↹
   - ↑
@@ -60,9 +60,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: Home, h: Shift}
-  - ←
+  - Ctl+←
   - ↓
-  - →
+  - Ctl+→
   - End
   - {t: Page ↓, h: End}
   - ←
@@ -223,7 +223,7 @@ layers:
   - ⌦
   - ⌦
   - Gui+␣
-  - {t: ▽, type: trans}
+  - {t: ⏎, h: Alt}
   - ''
   ru_symbols:
   - ''
@@ -354,6 +354,7 @@ combos:
   l: [def, num]
 - p: [8, 9]
   k: ^
+  l: [def]
 - p: [7, 8]
   k: '['
   l: [def]
