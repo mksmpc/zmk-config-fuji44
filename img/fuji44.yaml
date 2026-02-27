@@ -85,7 +85,7 @@ layers:
   - {t: Shift, h: nav}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&smart_mnav 3 0', type: held}
+  - {t: def, h: m_nav, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -175,7 +175,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - Left Click
   - Left Click
   - Right Click

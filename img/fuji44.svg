@@ -583,10 +583,11 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(370, 255) rotate(28.0)" class="key held keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">
-<tspan x="0" dy="-1.2em" style="font-size: 64%">&amp;smart_mnav</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">3</tspan><tspan x="0" dy="1.2em" style="font-size: 64%">0</tspan>
-</text>
-</g>
+<a href="#def">
+<text x="0" y="0" class="key held tap layer-activator">def</text>
+</a><a href="#m_nav">
+<text x="0" y="24" class="key held hold layer-activator">m_nav</text>
+</a></g>
 <g transform="translate(470, 255) rotate(-28.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
@@ -1009,8 +1010,8 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(313, 231) rotate(14.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(370, 255) rotate(28.0)" class="key keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<g transform="translate(370, 255) rotate(28.0)" class="key held keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(470, 255) rotate(-28.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
