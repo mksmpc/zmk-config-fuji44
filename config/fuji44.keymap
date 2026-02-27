@@ -175,7 +175,7 @@
 
         // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
         #define SMART_MNAV &smart_mnav 3 0
-        smart_nav: smart_mnav {
+        smart_mnav: smart_mnav {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
