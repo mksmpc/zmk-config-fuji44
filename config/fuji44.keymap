@@ -6,12 +6,11 @@
  */
 
 #define DEF 0
-#define RU_S   1
-#define NAV   2
+#define NAV   1
+#define RU_S  6
 #define MNAV   3
 #define NUM   4
 #define FUN   5
-#define BT   6
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30    // default: 10
 
@@ -159,12 +158,29 @@
             mods = <(MOD_LCTL)>;
         };
 
+        nav_al: nav_al {
+          compatible = "zmk,behavior-auto-layer";
+          #binding-cells = <1>;
+          continue-list = <LEFT DOWN UP RIGHT HOME END>;
+          ignore-modifiers;
+        };
+
         td_nav: td_nav_mnav {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NAV";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
-            bindings = <&mo 1>, <&mo 3>;
+            bindings = <&nav_al 1>, <&mo 3>;
+        };
+
+        // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
+        #define SMART_NAV &smart_nav 1 0
+        smart_nav: smart_nav {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&td_nav>;
         };
 
         td_en_num_func: td_en_num_func {
@@ -303,6 +319,20 @@
             display-name = "Layer-Tap";
             label = "LT_TOG_LAYER__TOG_KEY";
         };
+
+        hold_shift: hold_shift {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT>, <&none>;
+        };
+
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp TAB>;
+            ignored-key-positions = <13>;
+        };
+
     };
 
     keymap {
@@ -313,15 +343,15 @@
 &kp TAB                  &kp Q             &kp W      &kp E        &kp R                              &kp T      &kp Y          &kp U               &kp I           &kp O              &kp P                    &kp LEFT_BRACKET
 &mt LEFT_SHIFT CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                     &kp G      &kp H          &kp J               &kp K           &kp L              &hrm_rm LEFT_SHIFT SEMI  &kp SQT
 &redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                              &kp B      &kp N          &kp M               &kp COMMA       &kp DOT            &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
-                                           &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE  &td_nav    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+                                           &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE  SMART_NAV    &kp BACKSPACE  &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp LC(HOME)    &kp LEFT                        &kp UP          &kp RIGHT                  &kp LC(END)    &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)       &none
+&trans  &kp LC(HOME)    &kp LEFT                        &kp UP          &kp RIGHT                  &kp LC(END)    &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &swapper       &none
 &trans  &mt LSHFT HOME  &kp LC(LEFT)                    &kp DOWN        &kp LC(RIGHT)              &kp END        &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
-&trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))       &kt LEFT_SHIFT  &mt LS(END) LS(LC(RIGHT))  &none          &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
+&trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))       &hold_shift     &mt LS(END) LS(LC(RIGHT))  &none          &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
                         &lt_tog_layer__tog_key 1 LSHFT  &trans          &trans                     &trans         &trans             &trans           &trans         &tog 1
             >;
         };
