@@ -40,7 +40,7 @@ layers:
   - '`'
   - {t: ⏎, h: num}
   - {t: ␣, h: LEFT CONTROL}
-  - {t: '&td_nav', h: nav}
+  - {t: '&nav_al 1', h: nav}
   - ⌫
   - {t: ␣, h: LEFT GUI}
   - {t: ⏎, h: Alt}
@@ -85,7 +85,7 @@ layers:
   - {t: Shift, h: nav}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: '&smart_mnav 3 0', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
