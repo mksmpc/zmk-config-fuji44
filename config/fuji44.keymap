@@ -106,6 +106,7 @@
         ru_colon {
             bindings = <&kp CARET>;
             key-positions = <8 9>;
+            layers = <0>;
         };
 
         ru_he_2 {
@@ -307,8 +308,8 @@
 
         nav {
             bindings = <
-&trans  &none           &kp LC(LEFT)               &kp UP          &kp LC(RIGHT)              &none      &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)       &none
-&trans  &mt LSHFT HOME  &kp LEFT                   &kp DOWN        &kp RIGHT                  &kp END    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
+&trans  &kp LC(HOME)    &kp LEFT             &kp UP          &kp RIGHT                &kp LC(END)      &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &kp LA(TAB)       &none
+&trans  &mt LSHFT HOME  &kp LC(LEFT)       &kp DOWN        &kp LC(RIGHT)        &kp END    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
 &trans  &kp LCTRL       &mt LS(HOME) LS(LC(LEFT))  &kt LEFT_SHIFT  &mt LS(END) LS(LC(RIGHT))  &none      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
                         &tog 1                     &trans          &trans                     &trans     &trans             &trans           &trans         &tog 1
             >;
@@ -337,7 +338,7 @@
 &trans  &none             &none            &none   &none          &none      &kp C_VOLUME_UP    &kp F7         &kp F8  &kp F9  &kp F12                 &none
 &trans  &sk LSHIFT        &none            &none   &none          &none      &kp C_VOLUME_DOWN  &kp F4         &kp F5  &kp F6  &hrm_rm LEFT_SHIFT F11  &none
 &trans  &sk LEFT_CONTROL  &mo 6            &none   &none          &none      &kp C_MUTE         &kp F1         &kp F2  &kp F3  &hrm_rb LCTRL F10       &none
-                          &kp PRINTSCREEN  &trans  &kp BACKSPACE  &kp DEL    &kp DEL            &kp LG(SPACE)  &trans  &none
+                          &kp PRINTSCREEN  &trans  &kp BACKSPACE  &kp DEL    &kp DEL            &kp LG(SPACE)  &mt LALT ENTER  &none
             >;
         };
 
