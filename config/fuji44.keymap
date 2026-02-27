@@ -323,7 +323,7 @@
             compatible = "zmk,behavior-smart-toggle";
             #binding-cells = <0>;
             bindings = <&kp LSHIFT>, <&none>;
-            ignored-key-positions = <15 2 3 4>;
+            ignored-key-positions = <15 1 2 3 4 5>;
 
         };
 
