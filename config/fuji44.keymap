@@ -164,7 +164,7 @@
           continue-list = <LEFT DOWN UP RIGHT HOME END LSHFT RCTRL>;
         };
 
-        td_nav: td_nav_mnav {
+        td_nav: td_nav {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NAV";
             #binding-cells = <0>;
