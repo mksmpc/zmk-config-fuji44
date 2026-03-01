@@ -347,6 +347,19 @@
 
     };
 
+ macros {
+        mnav: mnav {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &nav_al>,
+                <&macro_press &mo 3>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 3>;
+            label = "MNAV";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -364,7 +377,7 @@
 &trans  &kp RC(HOME)    &kp LEFT                        &kp UP          &kp RIGHT                  &kp RC(END)    &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &swapper       &none
 &trans  &mt LSHFT HOME  &kp RC(LEFT)                    &kp DOWN        &kp RC(RIGHT)              &kp END        &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
 &trans  &kp RCTRL       &mt LS(HOME) LS(RC(LEFT))       &hold_shift     &mt LS(END) LS(RC(RIGHT))  &none          &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
-                        &lt_tog_layer__tog_key 1 LSHFT  &trans          &trans                     SMART_MNAV         &trans             &trans           &trans         &tog 1
+                        &lt_tog_layer__tog_key 1 LSHFT  &trans          &trans                     &mnav          &trans             &trans           &trans         &tog 1
             >;
         };
 
