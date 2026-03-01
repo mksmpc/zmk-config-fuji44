@@ -85,7 +85,7 @@ layers:
   - {t: Shift, h: nav}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mnav', type: held}
+  - {t: '&mnav_macro', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

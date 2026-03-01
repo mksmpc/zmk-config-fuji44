@@ -583,7 +583,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(370, 255) rotate(28.0)" class="key held keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">&amp;mnav</text>
+<text x="0" y="0" class="key held tap"><tspan style="font-size: 64%">&amp;mnav_macro</tspan></text>
 </g>
 <g transform="translate(470, 255) rotate(-28.0)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
