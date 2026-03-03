@@ -47,11 +47,11 @@ layers:
   - ']'
   nav:
   - {t: ▽, type: trans}
-  - Ctl+Home
+  - {t: Ctl+Home, h: Sft+Ctl+Home}
   - ←
   - ↑
   - →
-  - Ctl+End
+  - {t: Ctl+End, h: Sft+Ctl+End}
   - {t: PAGE UP, h: Home}
   - Sft+Ctl+↹
   - ↑
