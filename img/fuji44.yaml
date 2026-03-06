@@ -282,7 +282,7 @@ layers:
   - BT 2
   - BT 3
   - BT 4
-  - BT CLR
+  - ''
   - ''
   - ''
   - ''
@@ -293,8 +293,8 @@ layers:
   - Out USB
   - Out BLE
   - ''
-  - ''
-  - BT CLR ALL
+  - BT CLR
+  - {t: game, h: toggle}
   - Reset
   - ''
   - {type: held}
@@ -315,6 +315,51 @@ layers:
   - ''
   - ''
   - Boot
+  game:
+  - '1'
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '2'
+  - Shift
+  - A
+  - S
+  - D
+  - F
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: game, h: toggle}
+  - '3'
+  - Ctrl
+  - Z
+  - X
+  - C
+  - V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - ⏎
+  - ␣
+  - Ctrl
+  - ''
+  - ''
+  - ''
+  - ''
 combos:
 - p: [1, 2]
   k: Esc
@@ -361,3 +406,6 @@ combos:
 - p: [31, 32]
   k: ''''
   l: [def, num]
+- p: [28, 27]
+  k: G
+  l: [game]
