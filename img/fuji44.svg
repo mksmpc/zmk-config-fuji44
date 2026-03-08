@@ -1705,7 +1705,9 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g transform="translate(527, 231) rotate(-14.0)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
+<a href="#fun">
+<text x="0" y="0" class="key tap layer-activator">fun</text>
+</a></g>
 <g transform="translate(588, 224)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
