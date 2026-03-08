@@ -155,6 +155,7 @@
         g6 {
             bindings = <&kp NUMBER_6>;
             key-positions = <28 29>;
+            layers = <7>;
         };
     };
 
