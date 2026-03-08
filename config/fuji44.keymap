@@ -123,37 +123,31 @@
         };
 
         g1 {
-            bindings = <&kp N1>;
-            key-positions = <1 2>;
+            bindings = <&kp NUMBER_1>;
+            key-positions = <2 3>;
             layers = <7>;
         };
 
         g2 {
             bindings = <&kp NUMBER_2>;
-            key-positions = <2 3>;
+            key-positions = <3 4>;
             layers = <7>;
         };
 
         g3 {
             bindings = <&kp NUMBER_3>;
-            key-positions = <3 4>;
-            layers = <7>;
-        };
-
-        g4 {
-            bindings = <&kp NUMBER_4>;
             key-positions = <4 5>;
             layers = <7>;
         };
 
-        g5 {
-            bindings = <&kp N5>;
+        g4 {
+            bindings = <&kp N4>;
             key-positions = <16 17>;
             layers = <7>;
         };
 
-        g6 {
-            bindings = <&kp NUMBER_6>;
+        g5 {
+            bindings = <&kp NUMBER_5>;
             key-positions = <28 29>;
             layers = <7>;
         };
