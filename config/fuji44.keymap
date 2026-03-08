@@ -203,9 +203,6 @@
         };
 
         // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
-
-        #define SMART_MNAV &smart_mnav 3 1;
-
         smart_mnav: smart_mnav {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -215,9 +212,6 @@
         };
 
         // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
-
-        #define SMART_NAV &smart_nav 1 1;
-
         smart_nav: smart_nav {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -403,7 +397,7 @@
 &kp TAB                  &kp Q             &kp W      &kp E        &kp R                                        &kp T            &kp Y               &kp U           &kp I              &kp O    &kp P                    &kp LEFT_BRACKET
 &mt LEFT_SHIFT CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                               &kp G            &kp H               &kp J           &kp K              &kp L    &hrm_rm LEFT_SHIFT SEMI  &kp SQT
 &redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                                        &kp B            &kp N               &kp M           &kp COMMA          &kp DOT  &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
-                                           &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE SMART_NAV  &kp BACKSPACE    &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+                                           &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE &smart_nav 1 1  &kp BACKSPACE    &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
 
