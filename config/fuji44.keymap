@@ -122,10 +122,39 @@
             layers = <0 2>;
         };
 
-        combo_game_g {
-            bindings = <&kp G>;
-            key-positions = <28 27>;
+        g1 {
+            bindings = <&kp N1>;
+            key-positions = <1 2>;
             layers = <7>;
+        };
+
+        g2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 3>;
+            layers = <7>;
+        };
+
+        g3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <3 4>;
+            layers = <7>;
+        };
+
+        g4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <4 5>;
+            layers = <7>;
+        };
+
+        g5 {
+            bindings = <&kp N5>;
+            key-positions = <16 17>;
+            layers = <7>;
+        };
+
+        g6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <28 29>;
         };
     };
 
@@ -180,7 +209,9 @@
 
         // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
 
-        #define SMART_MNAV &smart_mnav 3 1
+        #define SMART_MNAV &smart_mnav 3
+
+        1
 
         smart_mnav: smart_mnav {
             compatible = "zmk,behavior-hold-tap";
@@ -192,7 +223,9 @@
 
         // Tap: nav auto_layer | double-tap: m_nav | Hold: nav-layer.
 
-        #define SMART_NAV &smart_nav 1 1
+        #define SMART_NAV &smart_nav 1
+
+        1
 
         smart_nav: smart_nav {
             compatible = "zmk,behavior-hold-tap";
@@ -439,10 +472,10 @@
 
         game {
             bindings = <
-&kp N1  &kp TAB    &kp Q      &kp W    &kp E      &kp R        &none  &none  &none  &none  &none  &none
-&kp N2  &kp LSHFT  &kp A      &kp S    &kp D      &kp F        &none  &none  &none  &none  &none  &tog 7
-&kp N3  &kp LCTRL  &kp Z      &kp X    &kp C      &kp V        &none  &none  &none  &none  &none  &none
-                   &kp GRAVE  &kp RET  &kp SPACE  &kp LCTRL    &none  &none  &none  &none
+&kp TAB    &kp Q  &kp W      &kp E    &kp R      &kp T       &kp Y  &kp U  &kp I      &kp O    &kp P     &none
+&kp LSHFT  &kp A  &kp S      &kp D    &kp F      &kp G       &kp H  &kp J  &kp K      &kp L    &kp SEMI  &tog 7
+&kp LCTRL  &kp Z  &kp X      &kp C    &kp V      &kp B       &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
+                  &kp GRAVE  &kp RET  &kp SPACE  &kp LALT    &mo 4  &none  &none      &none
             >;
         };
     };
