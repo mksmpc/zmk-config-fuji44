@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: CAPSLOCK, h: Shift}
+  - CAPSLOCK
   - {t: A, h: LSHIFT}
   - S
   - D
@@ -26,7 +26,7 @@ layers:
   - {t: ;, h: Shift}
   - ''''
   - {t: LEFT CONTROL, s: Sft+Ctl+Z}
-  - {t: Z, h: LEFT CONTROL, s: Undo}
+  - Z
   - X
   - C
   - V
@@ -420,4 +420,10 @@ combos:
   l: [game]
 - p: [28, 29]
   k: '5'
+  l: [game]
+- p: [13, 14]
+  k: PAGE UP
+  l: [game]
+- p: [25, 26]
+  k: Page ↓
   l: [game]
