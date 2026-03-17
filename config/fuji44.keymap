@@ -1,4 +1,4 @@
-/*
+    /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -267,8 +267,8 @@
         hrm_lb: hrm_lb {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            flavor = "balanced";
+            tapping-term-ms = <160>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = <13 14 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43 40 12 15 16 17 0 1 2 3 4 5 36 37 38 39 29 28>;
@@ -423,7 +423,7 @@
             bindings = <
 &kp TAB                  &kp Q             &kp W      &kp E        &kp R                                        &kp T            &kp Y               &kp U           &kp I              &kp O    &kp P                    &kp LEFT_BRACKET
 &kp CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                               &kp G            &kp H               &kp J           &kp K              &kp L    &hrm_rm LEFT_SHIFT SEMI  &kp SQT
-&redo_mod_morph          &kp Z     &kp X      &kp C        &kp V                                        &kp B            &kp N               &kp M           &kp COMMA          &kp DOT  &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
+&redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                                        &kp B            &kp N               &kp M           &kp COMMA          &kp DOT  &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
                                            &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE &smart_nav 1 1  &kp BACKSPACE    &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
             >;
         };
