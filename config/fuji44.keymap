@@ -203,7 +203,7 @@
         nav_al: nav_al {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT HOME END LSHFT RCTRL>;
+            continue-list = <LEFT DOWN UP RIGHT HOME END LSHFT RCTRL PAGE_UP PAGE_DOWN TAB LEFT_GUI>;
         };
 
         td_nav: td_nav {
@@ -412,7 +412,7 @@
                 <&macro_release>,
                 <&mo 4>,
                 <&macro_tap>,
-                <&tog 7>;
+ q               <&tog 7>;
         };
 };
 
@@ -430,7 +430,7 @@
 
         nav {
             bindings = <
-&trans  &mt LS(RC(HOME)) RC(HOME)  &kp LEFT                        &kp UP       &kp RIGHT                  &mt LS(RC(END)) RC(END)    &mt HOME PAGE_UP   &kp LS(LC(TAB))  &kp UP         &kp LC(TAB)  &swapper          &none
+&trans  &mt LS(RC(HOME)) RC(HOME)  &kp LEFT                        &kp UP       &kp RIGHT                  &mt LS(RC(END)) RC(END)    &mt HOME PAGE_UP   &kp LS(RC(TAB))  &kp UP         &kp RC(TAB)  &swapper          &none
 &trans  &mt LSHFT HOME             &kp RC(LEFT)                    &kp DOWN     &kp RC(RIGHT)              &kp END                    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
 &trans  &kp RCTRL                  &mt LS(HOME) LS(RC(LEFT))       &hold_shift  &mt LS(END) LS(RC(RIGHT))  &none                      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
                                    &lt_tog_layer__tog_key 1 LSHFT  &trans       &trans                     &mnav_macro                &trans             &trans           &trans         &tog 1
@@ -451,7 +451,7 @@
 &trans  &none             &none  &none  &none  &none    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none             &none
 &trans  &kp LEFT_SHIFT    &none  &none  &none  &none    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT    &none
 &trans  &kp LEFT_CONTROL  &none  &none  &none  &none    &none           &mkp MB4        &mkp MCLK       &mkp MB5         &kp LEFT_CONTROL  &none
-                          &none  &none  &none  &none    &mkp LCLK       &mkp LCLK       &mkp RCLK       &tog 4
+                          &none  &none  &none  &none    &mkp LCLK       &mkp LCLK       &mkp RCLK       &tog 3
             >;
         };
 
@@ -492,3 +492,4 @@
         };
     };
 };
+hy
