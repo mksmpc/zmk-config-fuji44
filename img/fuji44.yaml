@@ -55,7 +55,7 @@ layers:
   - {t: PAGE UP, h: Home}
   - Sft+Ctl+↹
   - ↑
-  - Tab →
+  - Ctl+↹
   - Win Next
   - ''
   - {t: ▽, type: trans}
@@ -179,7 +179,7 @@ layers:
   - Left Click
   - Left Click
   - Right Click
-  - {t: fun, h: toggle}
+  - {t: m_nav, h: toggle}
   fun:
   - {t: ▽, type: trans}
   - ''
