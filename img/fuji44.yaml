@@ -37,13 +37,13 @@ layers:
   - .
   - {t: /, h: ru_symbols}
   - {t: ⏎, h: Shift}
-  - '`'
+  - {t: '`', h: LEFT GUI}
   - {t: ⏎, h: num}
   - {t: ␣, h: LEFT CONTROL}
   - {t: '&nav_al 1', h: nav}
   - ⌫
-  - {t: ␣, h: LEFT GUI}
-  - {t: ⏎, h: Alt}
+  - LEFT GUI
+  - Alt
   - ']'
   nav:
   - {t: ▽, type: trans}
@@ -80,7 +80,7 @@ layers:
   - Sft+Gui+↹
   - Gui+`
   - Gui+↹
-  - LEFT CONTROL
+  - Ctrl
   - ''
   - {t: Shift, h: nav}
   - {t: ▽, type: trans}
