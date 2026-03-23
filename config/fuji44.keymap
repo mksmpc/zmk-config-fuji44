@@ -424,7 +424,7 @@
 &kp TAB                  &kp Q             &kp W      &kp E        &kp R                                        &kp T            &kp Y               &kp U           &kp I              &kp O    &kp P                    &kp LEFT_BRACKET
 &kp CAPSLOCK  &hrm_lm LSHIFT A  &kp S      &kp D        &lt_letter 4 F                               &kp G            &kp H               &kp J           &kp K              &kp L    &hrm_rm LEFT_SHIFT SEMI  &kp SQT
 &redo_mod_morph          &continious_z     &kp X      &kp C        &kp V                                        &kp B            &kp N               &kp M           &kp COMMA          &kp DOT  &lt_ru_symbols 5 FSLH    &mt RSHIFT ENTER
-                                           &kp GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE &smart_nav 1 1  &kp BACKSPACE    &mt LEFT_GUI SPACE  &mt LALT ENTER  &kp RIGHT_BRACKET
+                                           &mt LEFT_GUI GRAVE  &lt 2 ENTER  &mt_ctrl_space LEFT_CONTROL SPACE &smart_nav 1 1  &kp BACKSPACE    &kp LEFT_GUI  &kp LALT  &kp RIGHT_BRACKET
             >;
         };
 
@@ -432,7 +432,7 @@
             bindings = <
 &trans  &mt LS(RC(HOME)) RC(HOME)  &kp LEFT                        &kp UP       &kp RIGHT                  &mt LS(RC(END)) RC(END)    &mt HOME PAGE_UP   &kp LS(RC(TAB))  &kp UP         &kp RC(TAB)  &swapper          &none
 &trans  &mt LSHFT HOME             &kp RC(LEFT)                    &kp DOWN     &kp RC(RIGHT)              &kp END                    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
-&trans  &kp RCTRL                  &mt LS(HOME) LS(RC(LEFT))       &hold_shift  &mt LS(END) LS(RC(RIGHT))  &none                      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp LEFT_CONTROL  &none
+&trans  &kp RCTRL                  &mt LS(HOME) LS(RC(LEFT))       &hold_shift  &mt LS(END) LS(RC(RIGHT))  &none                      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp RCTRL  &none
                                    &lt_tog_layer__tog_key 1 LSHFT  &trans       &trans                     &mnav_macro                &trans             &trans           &trans         &tog 1
             >;
         };
