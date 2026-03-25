@@ -46,7 +46,7 @@ layers:
   - Alt
   - ']'
   nav:
-  - {t: ▽, type: trans}
+  - Win Next
   - {t: Ctl+Home, h: Sft+Ctl+Home}
   - ←
   - ↑
