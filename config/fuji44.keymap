@@ -382,7 +382,7 @@
             #binding-cells = <0>;
             bindings = <&kp LALT>, <&kp TAB>;
 
-            ignored-key-positions = <13>;
+            ignored-key-positions = <0 13>;
         };
     };
 
@@ -430,7 +430,7 @@
 
         nav {
             bindings = <
-&trans  &mt LS(RC(HOME)) RC(HOME)  &kp LEFT                        &kp UP       &kp RIGHT                  &mt LS(RC(END)) RC(END)    &mt HOME PAGE_UP   &kp LS(RC(TAB))  &kp UP         &kp RC(TAB)  &swapper          &none
+&swapper  &mt LS(RC(HOME)) RC(HOME)  &kp LEFT                        &kp UP       &kp RIGHT                  &mt LS(RC(END)) RC(END)    &mt HOME PAGE_UP   &kp LS(RC(TAB))  &kp UP         &kp RC(TAB)  &swapper          &none
 &trans  &mt LSHFT HOME             &kp RC(LEFT)                    &kp DOWN     &kp RC(RIGHT)              &kp END                    &mt END PAGE_DOWN  &kp LEFT         &kp DOWN       &kp RIGHT    &kp LEFT_SHIFT    &none
 &trans  &kp RCTRL                  &mt LS(HOME) LS(RC(LEFT))       &hold_shift  &mt LS(END) LS(RC(RIGHT))  &none                      &none              &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &kp RCTRL  &none
                                    &lt_tog_layer__tog_key 1 LSHFT  &trans       &trans                     &mnav_macro                &trans             &trans           &trans         &tog 1
