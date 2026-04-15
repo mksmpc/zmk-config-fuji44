@@ -138,9 +138,9 @@ layers:
   m_nav:
   - {t: ▽, type: trans}
   - ''
+  - Sft+Ctl+↹
   - ''
-  - ''
-  - ''
+  - Ctl+↹
   - ''
   - Scroll ↑
   - Scroll ←
@@ -162,9 +162,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - LEFT CONTROL
-  - ''
-  - ''
-  - ''
+  - Sft+Gui+↹
+  - Gui+`
+  - Gui+↹
   - ''
   - ''
   - Back Click
@@ -356,7 +356,7 @@ layers:
   - ⏎
   - ␣
   - Alt
-  - ''
+  - ⌫
   - '&game_fn_macro'
   - ''
   - ''
