@@ -327,7 +327,7 @@ layers:
   - I
   - O
   - P
-  - ''
+  - '7'
   - Shift
   - A
   - S
@@ -358,7 +358,7 @@ layers:
   - Alt
   - ⌫
   - '&game_fn_macro'
-  - ''
+  - Shift
   - ''
 combos:
 - p: [1, 2]
@@ -376,9 +376,6 @@ combos:
 - p: [21, 22]
   k: ''''
   l: [def, num]
-- p: [21, 22, 20]
-  k: '"'
-  l: [def, num]
 - p: [15, 16, 14]
   k: '['
   l: [def, num]
@@ -387,9 +384,6 @@ combos:
   l: [def, num]
 - p: [3, 4]
   k: '`'
-  l: [def]
-- p: [9, 10]
-  k: '['
   l: [def]
 - p: [33, 34]
   k: ']'
@@ -402,10 +396,10 @@ combos:
   l: [def]
 - p: [7, 8]
   k: '['
-  l: [def]
+  l: [def, game]
 - p: [31, 32]
   k: ''''
-  l: [def, num]
+  l: [def, num, game]
 - p: [2, 3]
   k: '1'
   l: [game]
