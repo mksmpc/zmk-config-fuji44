@@ -625,7 +625,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(532, 53)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">PLUS</tspan>
+<tspan x="0" dy="-0.6em" style="font-size: 88%">KP</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">ASTERISK</tspan>
 </text>
 </g>
 <g transform="translate(588, 46)" class="key keypos-7">
@@ -676,7 +676,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(532, 109)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">MINUS</tspan>
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">PLUS</tspan>
 </text>
 </g>
 <g transform="translate(588, 102)" class="key keypos-19">
@@ -729,7 +729,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(532, 165)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">KP</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">ASTERISK</tspan>
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">MINUS</tspan>
 </text>
 </g>
 <g transform="translate(588, 158)" class="key keypos-31">
@@ -747,7 +747,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(756, 172)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.9em">KP</tspan><tspan x="0" dy="1.2em">0</tspan>
+<tspan x="0" dy="-0.9em">KP</tspan><tspan x="0" dy="1.2em">DOT</tspan>
 </text>
 <text x="0" y="24" class="key hold">Ctrl</text>
 </g>
@@ -780,7 +780,7 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(588, 224)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">DOT</tspan>
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">0</tspan>
 </text>
 </g>
 <g transform="translate(644, 196)" class="key keypos-43">

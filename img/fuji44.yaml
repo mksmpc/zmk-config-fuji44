@@ -97,7 +97,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - KP PLUS
+  - KP ASTERISK
   - '7'
   - '8'
   - '9'
@@ -109,7 +109,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - KP MINUS
+  - KP PLUS
   - '4'
   - '5'
   - '6'
@@ -121,11 +121,11 @@ layers:
   - '|'
   - /
   - _
-  - KP ASTERISK
+  - KP MINUS
   - '1'
   - '2'
   - '3'
-  - {t: KP 0, h: Ctrl}
+  - {t: KP DOT, h: Ctrl}
   - ''
   - '`'
   - {type: held}
@@ -133,7 +133,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - KP 0
-  - KP DOT
+  - KP 0
   - KP DOT
   m_nav:
   - {t: ▽, type: trans}
