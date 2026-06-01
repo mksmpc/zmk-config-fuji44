@@ -37,7 +37,7 @@ layers:
   - .
   - {t: /, h: ru_symbols}
   - {t: ⏎, h: Shift}
-  - {t: '`', h: LEFT GUI}
+  - {t: F2, h: Alt}
   - {t: ⏎, h: num}
   - {t: ␣, h: LEFT CONTROL}
   - {t: '&nav_al 1', h: nav}
