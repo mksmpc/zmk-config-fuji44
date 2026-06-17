@@ -138,9 +138,9 @@ layers:
   m_nav:
   - {t: ▽, type: trans}
   - ''
-  - Ctl+,
-  - Ctl+/
-  - Ctl+.
+  - Sft+Ctl+↹
+  - ''
+  - Ctl+↹
   - ''
   - Scroll ↑
   - Scroll ←
@@ -150,9 +150,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - Shift
-  - Sft+Ctl+↹
-  - ''
-  - Ctl+↹
+  - Ctl+,
+  - Ctl+/
+  - Ctl+.
   - ''
   - Scroll ↓
   - Mouse ←
