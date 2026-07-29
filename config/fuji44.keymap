@@ -32,13 +32,13 @@
         par_l {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <15 16>;
-            layers = <0 2>;
+            layers = <0 2 7>;
         };
 
         par_r {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <19 20>;
-            layers = <0 2>;
+            layers = <0 2 7>;
         };
 
         undersor {
@@ -91,7 +91,7 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <20 21>;
-            layers = <0 2>;
+            layers = <0 2 7>;
             timeout-ms = <30>;
         };
 
@@ -444,7 +444,7 @@
         m_nav {
             bindings = <
 &trans  &none             &kp LS(RC(TAB))  &none          &kp RC(TAB)  &none    &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none             &none
-&trans  &kp LEFT_SHIFT    &kp LC(COMMA)    &kp LC(FSLH)   &kp LC(DOT)  &none    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT    &none
+&trans  &mt LSHFT COMMA   &kp LC(COMMA)    &kp LC(FSLH)   &kp LC(DOT)  &kp DOT  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_SHIFT    &none
 &trans  &kp LEFT_CONTROL  &kp LS(LG(TAB))  &kp LG(GRAVE)  &kp LG(TAB)  &none    &none           &mkp MB4        &mkp MCLK       &mkp MB5         &kp LEFT_CONTROL  &none
                           &none            &none          &none        &none    &mkp LCLK       &mkp LCLK       &mkp RCLK       &tog 3
             >;
