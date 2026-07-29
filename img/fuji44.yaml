@@ -149,11 +149,11 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - Shift
+  - {t: ',', h: Shift}
   - Ctl+,
   - Ctl+/
   - Ctl+.
-  - ''
+  - .
   - Scroll ↓
   - Mouse ←
   - Mouse ↓
@@ -366,10 +366,10 @@ combos:
   draw_separate: true
 - p: [15, 16]
   k: (
-  l: [def, num]
+  l: [def, num, game]
 - p: [19, 20]
   k: )
-  l: [def, num]
+  l: [def, num, game]
 - p: [32, 33]
   k: _
   l: [def, num]
@@ -393,7 +393,7 @@ combos:
   l: [def]
 - p: [20, 21]
   k: '-'
-  l: [def, num]
+  l: [def, num, game]
 - p: [8, 9]
   k: ^
   l: [def]
