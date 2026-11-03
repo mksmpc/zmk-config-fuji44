@@ -47,11 +47,11 @@ layers:
   - ']'
   nav:
   - Win Next
-  - {t: Ctl+Home, h: Sft+Ctl+Home}
+  - {t: Ctl+Home, h: (LS(RC(HOME)))}
   - ←
   - ↑
   - →
-  - {t: Ctl+End, h: Sft+Ctl+End}
+  - {t: Ctl+End, h: (LS(RC(END)))}
   - {t: PAGE UP, h: Home}
   - Sft+Ctl+↹
   - ↑
@@ -72,9 +72,9 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - Ctrl
-  - {t: Sft+Ctl+←, h: Sft+Home}
+  - {t: Sft+Ctl+←, h: (LS(HOME))}
   - '&hold_shift'
-  - {t: Sft+Ctl+→, h: Sft+End}
+  - {t: Sft+Ctl+→, h: (LS(END))}
   - ''
   - ''
   - Sft+Gui+↹
@@ -116,7 +116,7 @@ layers:
   - {t: KP SLASH, h: Shift}
   - ''
   - {t: ▽, type: trans}
-  - {t: Ctl+/, h: Ctrl}
+  - {t: Ctl+/, h: (LCTRL)}
   - \
   - '|'
   - /
