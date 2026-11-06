@@ -285,7 +285,7 @@
 
             flavor = "balanced";
             require-prior-idle-ms = <30>;
-            tapping-term-ms = <9>;
+            tapping-term-ms = <90>;
 
             bindings = <&kp>, <&kp>;
 
@@ -298,7 +298,7 @@
 
             flavor = "balanced";
             require-prior-idle-ms = <30>;
-            tapping-term-ms = <9>;
+            tapping-term-ms = <90>;
 
             bindings = <&kp>, <&kp>;
 
