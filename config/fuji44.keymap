@@ -284,8 +284,8 @@
             #binding-cells = <2>;
 
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
-            tapping-term-ms = <200>;
+            require-prior-idle-ms = <30>;
+            tapping-term-ms = <150>;
 
             bindings = <&kp>, <&kp>;
 
