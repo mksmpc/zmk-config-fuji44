@@ -91,7 +91,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: nav, h: toggle}
   num:
-  - {t: ▽, type: trans}
+  - ''
   - '1'
   - '2'
   - '3'
